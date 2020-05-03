@@ -1,0 +1,189 @@
+
+/*body*/
+
+body{
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container_body_wrapper {
+    display: flex;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: lighter;
+    color: #212121;
+}
+
+h1 > span {
+    font-weight: bold;
+    color: #B2BABB;
+}
+
+h2 {
+    font-size: 150%;
+    color: #212121;
+}
+
+h2 > span {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color:  #B2BABB;
+}
+
+h3 {
+    color: #212121;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    color: #F4F6F7;
+    background-color: #424242;
+}
+
+p {
+    font-size: 80%;
+    color: #212121;
+}
+
+.texte_contact,
+.texte_presentation {
+    text-align: justify;
+}
+
+
+/*Header*/
+
+.container_header {
+    display: flex;
+}
+
+#container_photo {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0;
+    background-color: #B2DFDB;
+}
+
+.photo_marion {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #B2BABB;
+}
+
+#container_titre {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: #F4F6F7;
+}
+
+.titre_cv {
+    width: 100%;
+}
+
+
+/*Aside + article*/
+
+.container_aside_article {
+    display: flex;
+}
+
+
+/*Aside*/
+
+.container_aside {
+    width: 30%;
+    background-color: #B2DFDB;
+}
+
+
+/*Article*/
+
+.container_article {
+    width: 70%;
+    background-color: #F4F6F7;
+}
+
+.sections_article {
+    display: flex;
+}
+
+.fas.fa-graduation-cap,
+.fas.fa-briefcase,
+.fas.fa-pen {
+    color: #424242;
+    padding-right: 5%;
+}
+
+.far.fa-dot-circle {
+    font-size: 15px;
+}
+
+.puce {
+    font-size: 10px;
+    color: #424242;
+    padding-right: 2%;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    color: #424242;
+}
+
+/*Footer*/
+
+.container_footer {
+    display: flex;
+}
+
+#loisirs {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #B2DFDB;
+}
+
+.container_loisirs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.icone_loisirs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: #424242;
+    border-radius: 60%;
+    border: 2px solid #424242;
+    margin: auto;
+
+}
+
+.container_recommandations {
+    display: flex;
+    justify-content: space-around;
+}
+
+#recommandations {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #F4F6F7;
+}
+
+
