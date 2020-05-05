@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--Déclaration encodage document-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -11,32 +11,31 @@
     
 </head>
 
-    <body class="conteneur_body_wrapper">
+        <body>
 
-            <header class="container_header">
-                <!--Section 1 Photo-->
-                    <figure id="container_photo">
-                        <div class="photo_marion">
-                            <a href="img/portrait_grand.png"><img src="img/portrait_petit.jpg" alt="Photo d'identité" title="Cliquez pour aggrandir"/></a>
-                        </div> 
-                    </figure>    
+                <header id="container_header">
+                    <!--Section 1 Photo-->
+                        <figure id="container_picture">
+                            <div id="picture_marion"> 
+                                <a href="img/portrait_grand.png"><img src="img/portrait_petit.jpg" alt="Photo d'identité" title="Cliquez pour aggrandir"/></a>
+                            </div>   
+                        </figure>        
+                    <!--Section 2 Titre CV-->
+                        <section id="container_title_cv"> 
+                            <div id="title_cv">
+                                <h1><span>MARION</span> RÉBIER</h1>
+                                <h2 class="margin_0"><span>Dével</span>oppeuse web freelance</h2>
+                            </div>
+                        </section>
+                </header>
 
-                <!--Section 2 Titre CV-->
-                    <section id="container_titre"> 
-                        <div class="titre_cv">
-                            <h1><span>MARION</span> REBIER</h1>
-                            <h2><span>Dével</span>oppeuse web freelance</h2>
-                        </div>
-                    </section>
-            </header>
-
-                <div class="container_aside_article">
+                <div id="container_aside_article">
                             
-                    <aside class="container_aside">
+                    <aside id="container_aside">
                         <!--Section 3 Contact-->    
-                            <section id="contact"> 
+                            <section> 
                                 <h4>CONTACT</h4>
-                                    <div class="texte_contact">
+                                    <div id="text_contact">
                                         <p>Adresse<br>
                                         Amiens, France<br><br>
 
@@ -55,144 +54,148 @@
                             </section>
 
                         <!--Section 4 Présentation-->
-                            <section id="presentation"> 
-                                <h4>&Agrave PROPOS DE MOI</h4>
-                                    <div class="texte_presentation">
+                            <section> 
+                                <h4>À PROPOS DE MOI</h4>
+                                    <div id="text_presentation">
                                         <p>J'ai enseigné le français langue étrangère pendant environ 10 ans sur différents continents, et me passionne pour les TICE.<br>
                                         Je souhaite développer sites et solutions pédagogiques distancielles.<br>
-                                         J'affectionne particulièrement les arts graphiques dont la photographie et le dessin. Je m'intéresse donc aussi fortement à l'UI Design.</p>
+                                        J'affectionne particulièrement les arts graphiques dont la photographie et le dessin. Je m'intéresse donc aussi fortement à l'UI Design.</p>
                                     </div>
                             </section>
                     </aside>
 
-                    <article class="container_article">
+                    <article id="container_article">
+
                         <!--Section 5 Formation--> 
-                        <h2><i class="fas fa-graduation-cap"></i>FORMATION</h2>
-                            <div class="ligne">
+                            <h2><i class="fas fa-graduation-cap"></i>FORMATION</h2>
 
-                                <div class="sections_article">
-                                    <div class="puce">
-                                        <i class="far fa-dot-circle"></i>
-                                    </div>
-                                    <div class="annee_lieu">
-                                        <p>2020<br>&Agrave distance</p>
-                                    </div>
-                                    <div class="organisme_contenu">
-                                        <h3>OPENCLASSROOMS</h3>
-                                        <p>Parcours Développeur web</p>
-                                        <p>Formation de 6 mois sanctionnée par un diplôme de niveau 5 enregistré au RNCP.
-                                        Environnement technique : VSC, GIT, HTML, CSS, Sass, JavaScript, Node.js, PHP, SQL, etc.</p>
-                                    </div>
-                                </div> 
+                                <div class="line">
 
-                                <div class="sections_article"> 
-                                    <div class="puce">
-                                        <i class="fas fa-circle"></i>
-                                    </div>
-                                    <div class="annee_lieu">
-                                        <p>2017<br>&Agrave distance</p>
-                                    </div>
-                                    <div class="organisme_contenu">
-                                        <h3>UNIVERSIT&Eacute GRENOBLE ALPES</h3>
-                                        <p>Master 2 en Sciences du langage, spécialité FLE</p>
-                                        <p>Formation à l'enseignement du Français Langue &Eacutetrangère, à l'ingénierie pédagogique et de formation (conception de matériels et dispositifs).</p>
-                                    </div>
-                                </div>  
+                                    <section class="section_article"> <!--Ligne formation OpenClassrooms-->
+                                            <div class="bullet_point">
+                                                <i class="far fa-dot-circle"></i>
+                                            </div>
+                                            <div class="year_place">
+                                                <p>2020<br>À distance</p>
+                                            </div>
+                                            <div class="content_tasks">
+                                                <h3>OPENCLASSROOMS</h3>
+                                                <p><b>Parcours Développeur web</b></p>
+                                                <p>Formation de 6 mois sanctionnée par un diplôme de niveau 5 enregistré au RNCP.
+                                                Environnement technique : VSC, GIT, HTML, CSS, Sass, JavaScript, Node.js, PHP, SQL, etc.</p>
+                                            </div>
+                                    </section> 
 
-                                <div class="sections_article"> 
-                                    <div class="puce">
-                                        <i class="fas fa-circle"></i>
-                                    </div>
-                                    <div class="annee_lieu">
-                                        <p>2005<br>Aix-en-Provence</p> 
-                                    </div>
-                                    <div class="organisme_contenu">
-                                        <h3>AIX-MARSEILLE UNIVERSIT&Eacute</h3>
-                                        <p>Maîtrise en Théorie et pratiques des arts</p>
-                                        <p>Formation à l'acquisition de techniques, pratiques et savoirs théoriques dans le domaine des Arts. Spécialisation en photographie.</p>
-                                    </div>
-                                </div> 
-                            </div>
+                                    <section class="section_article"> <!--Ligne formation Université Grenoble-->
+                                            <div class="bullet_point">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <div class="year_place">
+                                                <p>2017<br>À distance</p>
+                                            </div>
+                                            <div class="content_tasks">
+                                                <h3>UNIVERSITÉ GRENOBLE ALPES</h3>
+                                                <p><b>Master 2 en Sciences du langage, spécialité FLE</b></p>
+                                                <p>Formation à l'enseignement du Français Langue Étrangère, à l'ingénierie pédagogique et de formation (conception de matériels et dispositifs).</p>
+                                            </div>
+                                    </section>  
+
+                                    <section class="section_article"> <!--Ligne formation Université Aix-Marseille-->
+                                            <div class="bullet_point">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <div class="year_place">
+                                                <p>2005<br>Aix-en-Provence</p> 
+                                            </div>
+                                            <div class="content_tasks">
+                                                <h3>AIX-MARSEILLE UNIVERSITÉ</h3>
+                                                <p><b>Maîtrise en Théorie et pratiques des arts</b></p>
+                                                <p>Formation à l'acquisition de techniques, pratiques et savoirs théoriques dans le domaine des Arts. Spécialisation en photographie.</p>
+                                            </div>
+                                    </section> 
+                                </div>
                             
 
                         <!--Section 6 Expérience-->
-                        <h2><i class="fas fa-briefcase"></i>EXP&EacuteRIENCE PROFESSIONNELLE</h2>
-                            <div class="ligne">
+                        <h2><i class="fas fa-briefcase"></i>EXPÉRIENCE PROFESSIONNELLE</h2>
 
-                                <div class=sections_article>
-                                    <div class="puce">
+                            <div class="line">
+
+                                <section class=section_article> <!--Ligne expérience GIP FORINVAL-->
+                                        <div class="bullet_point">
+                                            <i class="fas fa-circle"></i>
+                                        </div>
+                                        <div class="year_place">
+                                            <p>Mai 2018<br>
+                                            à Décembre 2019<br>
+                                            Amiens, France</p>
+                                        </div>
+                                        <div class="content_tasks">
+                                            <h3>GIP FORINVAL</h3>
+                                            <p><b>Conceptrice de ressources pédagogiques multimédia</b></p>
+                                            <ul>
+                                                <li><p class="margin_0">Médiatisation de modules de formation</p></li>
+                                                <li><p class="margin_0">Formation de formateurs à la scénarisation pédagogique</p></li>
+                                                <li><p class="margin_0">Conception graphique de supports formatifs</p></li>
+                                                <li><p class="margin_0">Veille pédagogique et technique</p></li>
+                                            </ul>
+                                        </div>
+                                </section>    
+
+                                <section class=section_article> <!--Ligne expérience Alliance française & Institut français-->
+                                    <div class="bullet_point">
                                         <i class="fas fa-circle"></i>
                                     </div>
-                                    <div class="annee_lieu">
-                                        <p>Mai 2018<br>
-                                        à Décembre 2019<br>
-                                        Amiens, France</p>
-                                    </div>
-                                    <div class="organisme_contenu">
-                                        <h3>GIP FORINVAL</h3>
-                                        <p>Conceptrice de ressources pédagogiques multimédia</p>
-                                        <ul>
-                                            <li><p class="reduction_marges">Médiatisation de modules de formation</p></li>
-                                            <li><p class="reduction_marges">Formation de formateurs à la scénarisation pédagogique multimodale</p></li>
-                                            <li><p class="reduction_marges">Conception graphique de supports formatifs</p></li>
-                                            <li><p class="reduction_marges">Veille pédagogique et technique</p></li>
-                                        </ul>
-                                    </div>
-                                </div>    
-
-                                <div class=sections_article>
-                                    <div class="puce">
-                                        <i class="fas fa-circle"></i>
-                                    </div>
-                                    <div class="annee_lieu">
-                                        <p class=>Octobre 2010<br>
+                                    <div class="year_place">
+                                        <p>Octobre 2010<br>
                                         à Décembre 2019<br>
                                         International</p>
                                     </div>
-                                    <div class="organisme_contenu">
+                                    <div class="content_tasks">
                                         <h3>ALLIANCE FRANÇAISE & INSTITUT FRANÇAIS</h3>
-                                        <p>Enseignante de Français Langue Etrangère</p>
+                                        <p><b>Enseignante de Français Langue Étrangère</b></p>
                                         <ul>
-                                            <li><p class="reduction_marges">Cours de FLE, FOS et FLAM</p></li>
-                                            <li><p class="reduction_marges">Conception de matériel pédagogique</p></li>
-                                            <li><p class="reduction_marges">Formation de formateurs</p></li>
-                                            <li><p class="reduction_marges">Jury et correctrice de certifications</p></li>
+                                            <li><p class="margin_0">Cours de FLE, FOS et FLAM</p></li>
+                                            <li><p class="margin_0">Conception de matériel pédagogique</p></li>
+                                            <li><p class="margin_0">Formation de formateurs</p></li>
+                                            <li><p class="margin_0">Jury et correctrice de certifications</p></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </section>
 
-                                <div class=sections_article>
-                                    <div class="puce">
+                                <section class=section_article> <!--Ligne expérience Stage Alliance française Pritina-->
+                                    <div class="bullet_point">
                                         <i class="fas fa-circle"></i>
                                     </div>
-                                    <div class="annee_lieu">
+                                    <div class="year_place">
                                         <p>Février 2016<br>
                                         à Juin 2016<br> 
                                         Pristina, Kosovo</p>
                                     </div>
-                                    <div class="organisme_contenu">
+                                    <div class="content_tasks">
                                         <h3>ALLIANCE FRANÇAISE</h3>
-                                        <p>Stage Master 2 Sciences du langage</p>
+                                        <p><b>Stage Master 2 Sciences du langage</b></p>
                                         <ul>
-                                            <li><p class="reduction_marges">Mise en place de l'offre de cours à distance</p></li>
-                                            <li><p class="reduction_marges">Formation de formateurs</p></li>
+                                            <li><p class="margin_0">Mise en place de l'offre de cours à distance</p></li>
+                                            <li><p class="margin_0">Formation de formateurs</p></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </section>
 
                             </div>
+
                     </article>
                 </div>
 
-            <footer class="container_footer">
+            <footer id="container_footer">
 
                 <!--Section 7 Loisirs-->
                     <section id="container_footer_loisirs">
                         <h4>LOISIRS</h4>  
-                            <div class="container_icones">
-                                <div class="cercle_icone"><i class="fas fa-utensils fa-2x"></i></div>
-                                <div class="cercle_icone"><i class="fas fa-camera fa-2x"></i></div>
-                                <div class="cercle_icone"><i class="fas fa-plane fa-2x"></i></div>
+                            <div id="container_icons">
+                                <div class="circle_icon"><i class="fas fa-utensils fa-2x"></i></div>
+                                <div class="circle_icon"><i class="fas fa-camera fa-2x"></i></div>
+                                <div class="circle_icon"><i class="fas fa-plane fa-2x"></i></div>
                             </div>
                     </section>
 
@@ -200,17 +203,18 @@
                     <section id="container_footer_recommandations"> 
                         <h2 class="marge_haute_0"><i class="fas fa-pen"></i>RECOMMANDATIONS</h2>
 
-                            <div class="ligne">
-                                <div class="container_recommandations">
-                                    <div class=recommandation_1>
-                                        <p class="marge_basse_gras">BERTRAND SEGUES</p>
+                            <div class="line">
+                                <div id="container_recommandations">
+
+                                    <div id=recommandation_1> <!--Recommandation AF Bordeaux-->
+                                        <p class="margin_bottom"><b>BERTRAND SEGUES</b></p>
                                         <p>Responsable pédagogique, AF Bordeaux<br>
                                         Téléphone : 05.56.79.32.80<br>
                                         Email : name@email.com</p>
                                     </div>
 
-                                    <div class=recommandation_2>
-                                        <p class="marge_basse_gras">MARI PAZ ROSILLO</p>
+                                    <div id=recommandation_2> <!--Recommandation AF Madrid-->
+                                        <p class="margin_bottom"><b>MARI PAZ ROSILLO</b></p>
                                         <p>Responsable pédagogique, AF Madrid<br>
                                         Téléphone : 00.34.91.435.15.32<br>
                                         Email : name@email.com</p>
@@ -219,6 +223,6 @@
                             </div>
                     </section>
             </footer>
-    </body>
+        </body>
 
 </html>
