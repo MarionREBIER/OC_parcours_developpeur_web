@@ -1,35 +1,39 @@
 /*------SUMMARY------*/
 
 /*L11    1. Body*/
-/*L53    2. Header*/
-/*L97    3. Aside + article*/
-/*L104   4. Aside*/
-/*L117   5. Article*/
-/*L174   6. Footer*/
+/*L54    2. Header*/
+/*L99    3. Aside + article*/
+/*L106   4. Aside*/
+/*L120   5. Article*/
+/*L177   6. Footer*/
 
 
 /*------BODY------*/
 
 body {
     font-family: "Montserrat", Verdana, Tahoma, sans-serif;
-    max-width: 1200px;
+    /*min-width: 769px;*/
+    max-width: 1200px; /*Large tablet landscape - Tablet portrait - Laptop - Desktop*/
     margin: auto;
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 3em;
     font-weight: lighter;
     margin: 0;
+    padding-left: 7%;
     color: #212121;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 1.5em;
     margin-bottom: 1%;
+    padding-left: 7%;
     color: #212121;
 }
 
 h3 {
+    font-size: 1.1em;
     margin-top: 3%;
     margin-bottom: 2%;
     color: #212121;
@@ -37,7 +41,7 @@ h3 {
 
 h4 {
     text-align: center;
-    font-size: 150%;
+    font-size: 1.5em;
     margin: 0;
     padding: 2% 0 2% 0;
     color: #F4F6F7;
@@ -45,7 +49,7 @@ h4 {
 }
 
 p {
-    font-size: 80%;
+    font-size: 0.8em;
     color: #212121;
 }
 
@@ -78,9 +82,12 @@ p {
     display: flex;
     align-items: center;
     width: 70%;
-    padding: 0 3% 0 5%;
     background-color: #F4F6F7;
     margin: 0;
+}
+
+#title_cv {
+    width: 100%;
 }
 
 h1 > span {
@@ -105,6 +112,8 @@ h2 > span {
 /*------ASIDE------*/
 
 #container_aside {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     background-color: #B2DFDB;
 }
@@ -119,7 +128,6 @@ h2 > span {
 
 #container_article {
     width: 70%;
-    padding: 0 3% 0 5%;
     background-color: #F4F6F7;
 }
 
@@ -130,7 +138,7 @@ h2 > span {
 
 .line {
     border-top: 2px solid #B2BABB;
-    margin-bottom: 5%;
+    margin: 0 3% 5% 7%;
 }
 
 .fas.fa-graduation-cap,.fas.fa-briefcase,.fas.fa-pen {
@@ -150,11 +158,11 @@ h2 > span {
 }
 
 .year_place {
-    width: 22%;
+    width: 35%;
 }
 
 .content_tasks {
-    width: 500px;
+    width: 60%;
 }
 
 ul {
@@ -208,8 +216,11 @@ li {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 0 3% 0 5%;
     background-color: #F4F6F7;
+}
+
+.margin_top_0 {
+    margin-top: 0;
 }
 
 #container_recommandations {

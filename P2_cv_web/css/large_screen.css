@@ -1,0 +1,74 @@
+
+/*Large tablet portrait*/
+
+@media screen and (max-width: 768px) {
+
+    #picture_marion {
+        width: 130px;
+        height: 130px;
+        border: 1px solid #B2BABB;
+    }
+
+    img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-left: 5%;
+    }
+    
+    h2 {
+        font-size: 1em;
+        padding-left: 5%;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.6em;
+    }
+
+    .line {
+        border-top: 0.5px solid #B2BABB;
+        margin-left: 5%;
+    }
+
+    .year_place {
+        width: 35%;
+    }
+
+    .content_tasks {
+        width: 65%;
+    }
+
+    .bullet_point {
+        display: none;
+        padding-left: 0;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    #container_footer_loisirs {
+        padding-top: 3%;
+    }
+
+    .circle_icon {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #424242;
+    }
+}

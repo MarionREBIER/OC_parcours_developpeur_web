@@ -1,0 +1,35 @@
+
+/*Smartphones portrait*/
+
+@media screen and (max-width: 320px) {
+
+    p {
+        font-size: 0.7em;
+    }
+
+    #picture_marion {
+        width: 150px;
+        height: 150px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    h4 {
+        font-size: 0.9em;
+    }
+}
