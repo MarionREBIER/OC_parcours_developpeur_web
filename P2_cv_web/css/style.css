@@ -1,39 +1,49 @@
-/*------SUMMARY------*/
+/*------ SUMMARY ------*/
 
-/*L11    1. Body*/
-/*L54    2. Header*/
-/*L99    3. Aside + article*/
-/*L106   4. Aside*/
-/*L120   5. Article*/
-/*L177   6. Footer*/
+/*L11    1. BODY*/
+/*L67    2. HEADER*/
+/*L109   3. ASIDE + ARTICLE*/
+/*L116   4. ASIDE*/
+/*L139   5. ARTICLE*/
+/*L195   6. FOOTER*/
 
 
-/*------BODY------*/
+/*------ BODY ------*/
 
 body {
     font-family: "Montserrat", Verdana, Tahoma, sans-serif;
-    /*min-width: 769px;*/
-    max-width: 1200px; /*Large tablet landscape - Tablet portrait - Laptop - Desktop*/
+    max-width: 1200px;
     margin: auto;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: lighter;
     margin: 0;
     padding-left: 7%;
     color: #212121;
 }
 
+h1 > span {
+    font-weight: bold;
+    color: #B2BABB;
+}
+
 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 1%;
     padding-left: 7%;
     color: #212121;
 }
 
+h2 > span {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color:  #B2BABB;
+}
+
 h3 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     margin-top: 3%;
     margin-bottom: 2%;
     color: #212121;
@@ -41,7 +51,7 @@ h3 {
 
 h4 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 0;
     padding: 2% 0 2% 0;
     color: #F4F6F7;
@@ -49,12 +59,12 @@ h4 {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #212121;
 }
 
 
-/*------HEADER------*/
+/*------ HEADER ------*/
 
 #container_header {
     display: flex;
@@ -78,6 +88,11 @@ p {
     margin: 13% 10% 13% 10%;
 }
 
+img {
+    width: 205px;
+    height: 205px;
+}
+
 #container_title_cv {
     display: flex;
     align-items: center;
@@ -90,26 +105,15 @@ p {
     width: 100%;
 }
 
-h1 > span {
-    font-weight: bold;
-    color: #B2BABB;
-}
 
-h2 > span {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color:  #B2BABB;
-}
-
-
-/*------ASIDE + ARTICLE------*/
+/*------ ASIDE + ARTICLE ------*/
 
 #container_aside_article {
     display: flex;
 }
 
 
-/*------ASIDE------*/
+/*------ ASIDE ------*/
 
 #container_aside {
     display: flex;
@@ -123,8 +127,16 @@ h2 > span {
     padding: 5% 10% 10% 10%;
 }
 
+a, a:visited {
+    color: #E91E63;
+    text-decoration: none;
+}
 
-/*------ARTICLE------*/
+a:hover, a:focus {
+    font-weight: bold;
+}
+
+/*------ ARTICLE ------*/
 
 #container_article {
     width: 70%;
@@ -180,7 +192,7 @@ li {
 }
 
 
-/*------FOOTER------*/
+/*------ FOOTER ------*/
 
 #container_footer {
     display: flex;

@@ -1,225 +1,293 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8"> <!--Déclaration encodage document-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/large_screen.css" />
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/medium_screen.css" />
-    <link rel="stylesheet" media="screen and (max-width: 320px)" href="css/small_screen.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fa78040039.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="icon/svg" href="icons/laptop-solid.svg" />
-    <title>CV Marion REBIER</title>
-    
-</head>
 
-        <body>
+    <head>
+        <title>CV Marion REBIER</title>
 
-                <header id="container_header">
-                    <!--Section 1 Photo-->
-                        <figure id="container_picture">
-                            <div id="picture_marion"> <!--Vérifier si possible supprimer-->
-                                <img src="img/portrait_petit.jpg" alt="Photo d'identité" title="Cliquez pour aggrandir"/>
-                            </div>   
-                        </figure>        
-                    <!--Section 2 Titre CV-->
-                        <section id="container_title_cv"> 
-                            <div id="title_cv">
-                                <h1><span>MARION</span> RÉBIER</h1>
-                                <h2 class="margin_top_0 padding_left_0"><span>Dével</span>oppeuse web freelance</h2>
-                            </div>
-                        </section>
-                </header>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Présentation de mon CV sous forme de site web">
+        <meta name="author" content="Marion REBIER"/>
+        <!-- Open Graph data / Facebook -->
+        <meta property="og:title" content="CV Marion REBIER"/>
+        <meta property="og:type" content="website"/>
+        <!-- <meta property="og:url" content="http://www.example.com/"/> Changer lien dans GitHub -->
+        <!-- <meta property="og:image" content="http://example.com/image.jpg"/> Charger photo depuis GitHub -->
+        <meta property="og:description" content="Présentation de mon CV sous forme de site web"/>
+        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-                <div id="container_aside_article">
-                            
-                    <aside id="container_aside">
-                        <!--Section 3 Contact-->    
-                            <section> 
-                                <h4>CONTACT</h4>
-                                    <div id="text_contact">
-                                        <p>Adresse<br>
-                                        Amiens, France<br><br>
+        <!-- ICONS -->
+        <script src="https://kit.fontawesome.com/fa78040039.js" crossorigin="anonymous"></script> <!-- Installation Font Awesome via CDN -->
+        <link rel="icon" type="icon/svg" href="icons/laptop-solid.svg"/>
 
-                                        Téléphone<br>
-                                        00 00 00 00 00<br><br>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/large_screen.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/medium_screen.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 320px)" href="css/small_screen.css"/>
+    </head>
 
-                                        Email<br>
-                                        <a href="mailto:marionrebier@hotmail.com" target="_blank">marionrebier@hotmail.com</a><br><br>
+    <body>
 
-                                        Site web<br>
-                                        <a href="https://github.com/MarionREBIER" target="_blank">marionrebier.com</a><br><br>
-                                        
-                                        Skype<br>
-                                        live:marionrebier</p>
-                                    </div>
-                            </section>
-
-                        <!--Section 4 Présentation-->
-                            <section> 
-                                <h4>À PROPOS DE MOI</h4>
-                                    <div id="text_presentation">
-                                        <p>J'ai enseigné le français langue étrangère pendant environ 10 ans sur différents continents, et me passionne pour les TICE.<br>
-                                        Je souhaite développer sites et solutions pédagogiques distancielles.<br>
-                                        J'affectionne particulièrement les arts graphiques dont la photographie et le dessin. Je m'intéresse donc aussi fortement à l'UI Design.</p>
-                                    </div>
-                            </section>
-                    </aside>
-
-                    <article id="container_article">
-
-                        <!--Section 5 Formation--> 
-                            <h2><i class="fas fa-graduation-cap"></i>FORMATION</h2>
-
-                                <div class="line">
-
-                                    <section class="section_article"> <!--Ligne formation OpenClassrooms-->
-                                            <div class="bullet_point">
-                                                <i class="far fa-dot-circle"></i>
-                                            </div>
-                                            <div class="year_place">
-                                                <p>2020<br>À distance</p>
-                                            </div>
-                                            <div class="content_tasks">
-                                                <h3>OPENCLASSROOMS</h3>
-                                                <p><b>Parcours Développeur web</b></p>
-                                                <p>Formation de 6 mois sanctionnée par un diplôme de niveau 5 enregistré au RNCP.
-                                                Environnement technique : VSC, GIT, HTML, CSS, Sass, JavaScript, Node.js, PHP, SQL, etc.</p>
-                                            </div>
-                                    </section> 
-
-                                    <section class="section_article"> <!--Ligne formation Université Grenoble-->
-                                            <div class="bullet_point">
-                                                <i class="fas fa-circle"></i>
-                                            </div>
-                                            <div class="year_place">
-                                                <p>2017<br>À distance</p>
-                                            </div>
-                                            <div class="content_tasks">
-                                                <h3>UNIVERSITÉ GRENOBLE ALPES</h3>
-                                                <p><b>Master 2 en Sciences du langage, spécialité FLE</b></p>
-                                                <p>Formation à l'enseignement du Français Langue Étrangère, à l'ingénierie pédagogique et de formation (conception de matériels et dispositifs).</p>
-                                            </div>
-                                    </section>  
-
-                                    <section class="section_article"> <!--Ligne formation Université Aix-Marseille-->
-                                            <div class="bullet_point">
-                                                <i class="fas fa-circle"></i>
-                                            </div>
-                                            <div class="year_place">
-                                                <p>2005<br>Aix-en-Provence</p> 
-                                            </div>
-                                            <div class="content_tasks">
-                                                <h3>AIX-MARSEILLE UNIVERSITÉ</h3>
-                                                <p><b>Maîtrise en Théorie et pratiques des arts</b></p>
-                                                <p>Formation à l'acquisition de techniques, pratiques et savoirs théoriques dans le domaine des Arts. Spécialisation en photographie.</p>
-                                            </div>
-                                    </section> 
-                                </div>
-                            
-
-                        <!--Section 6 Expérience-->
-                        <h2><i class="fas fa-briefcase"></i>EXPÉRIENCE PROFESSIONNELLE</h2>
-
-                            <div class="line">
-
-                                <section class=section_article> <!--Ligne expérience GIP FORINVAL-->
-                                        <div class="bullet_point">
-                                            <i class="fas fa-circle"></i>
-                                        </div>
-                                        <div class="year_place">
-                                            <p>Mai 2018 à décembre 2019<br>Amiens, France</p>
-                                        </div>
-                                        <div class="content_tasks">
-                                            <h3>GIP FORINVAL</h3>
-                                            <p><b>Conceptrice de ressources pédagogiques multimédia</b></p>
-                                            <ul>
-                                                <li><p class="margin_0">Médiatisation de modules de formation</p></li>
-                                                <li><p class="margin_0">Formation de formateurs à la scénarisation pédagogique</p></li>
-                                                <li><p class="margin_0">Conception graphique de supports formatifs</p></li>
-                                                <li><p class="margin_0">Veille pédagogique et technique</p></li>
-                                            </ul>
-                                        </div>
-                                </section>    
-
-                                <section class=section_article> <!--Ligne expérience Alliance française & Institut français-->
-                                    <div class="bullet_point">
-                                        <i class="fas fa-circle"></i>
-                                    </div>
-                                    <div class="year_place">
-                                        <p>Octobre 2010 à décembre 2019<br>International</p>
-                                    </div>
-                                    <div class="content_tasks">
-                                        <h3>ALLIANCE FRANÇAISE & INSTITUT FRANÇAIS</h3>
-                                        <p><b>Enseignante de Français Langue Étrangère</b></p>
-                                        <ul>
-                                            <li><p class="margin_0">Cours de FLE, FOS et FLAM</p></li>
-                                            <li><p class="margin_0">Conception de matériel pédagogique</p></li>
-                                            <li><p class="margin_0">Formation de formateurs</p></li>
-                                            <li><p class="margin_0">Jury et correctrice de certifications</p></li>
-                                        </ul>
-                                    </div>
-                                </section>
-
-                                <section class=section_article> <!--Ligne expérience Stage Alliance française Pritina-->
-                                    <div class="bullet_point">
-                                        <i class="fas fa-circle"></i>
-                                    </div>
-                                    <div class="year_place">
-                                        <p>Février 2016 à juin 2016<br>Pristina, Kosovo</p>
-                                    </div>
-                                    <div class="content_tasks">
-                                        <h3>ALLIANCE FRANÇAISE</h3>
-                                        <p><b>Stage Master 2 Sciences du langage</b></p>
-                                        <ul>
-                                            <li><p class="margin_0">Mise en place de l'offre de cours à distance</p></li>
-                                            <li><p class="margin_0">Formation de formateurs</p></li>
-                                        </ul>
-                                    </div>
-                                </section>
-
-                            </div>
-
-                    </article>
+        <header id="container_header">
+            <!-- Section 1 Photo -->
+            <figure id="container_picture">
+                <div id="picture_marion">
+                    <img src="img/portrait.jpg" alt="Photo d'identité Marion REBIER"/>
+                </div>   
+            </figure>        
+            <!-- Section 2 Titre CV -->
+            <section id="container_title_cv"> 
+                <div id="title_cv">
+                    <h1>
+                        <span>MARION</span> RÉBIER
+                    </h1>
+                    <h2 class="margin_top_0 padding_left_0">
+                        <span>Dével</span>oppeuse web freelance
+                    </h2>
                 </div>
+            </section>
+        </header>        
 
-            <footer id="container_footer">
+        <main id="container_aside_article">
+                            
+            <aside id="container_aside">
+                <!-- Section 3 Contact -->    
+                <section> 
+                    <h4>
+                        CONTACT
+                    </h4>
+                    <div id="text_contact">
+                        <p>
+                            Adresse<br>
+                            Amiens, France<br><br>
+                            Téléphone<br>
+                            00 00 00 00 00<br><br>
+                            Email<br>
+                            <a href="mailto:marionrebier@hotmail.com" target="_blank">marionrebier@hotmail.com</a><br><br> <!-- _blank : le lien s'ouvre dans une nouvel onglet (sinon "_self") -->
+                            LinkedIn<br>
+                            <a href="https://www.linkedin.com/in/marionrebier/" target="_blank">marionrebier</a><br><br>
+                            GitHub<br>
+                            <a href="https://github.com/MarionREBIER" target="_blank">MarionREBIER</a>
+                        </p>
+                    </div>
+                </section>
 
-                <!--Section 7 Loisirs-->
-                    <section id="container_footer_loisirs">
-                        <h4>LOISIRS</h4>  
-                            <div id="container_icons">
-                                <div class="circle_icon"><i class="fas fa-utensils fa-2x"></i></div>
-                                <div class="circle_icon"><i class="fas fa-camera fa-2x"></i></div>
-                                <div class="circle_icon"><i class="fas fa-plane fa-2x"></i></div>
-                            </div>
+                <!-- Section 4 Présentation -->
+                <section> 
+                    <h4>
+                        À PROPOS DE MOI
+                    </h4>
+                    <div id="text_presentation">
+                        <p>
+                            J'ai enseigné le français langue étrangère pendant environ 10 ans sur différents continents, et me passionne pour les TICE.<br>
+                            Je souhaite développer sites et solutions pédagogiques distancielles.<br>
+                            J'affectionne particulièrement les arts graphiques dont la photographie et le dessin. Je m'intéresse donc aussi fortement à l'UI Design.
+                        </p>
+                    </div>
+                </section>
+            </aside>
+
+            <article id="container_article">
+                <!-- Section 5 Formation --> 
+                <h2>
+                    <i class="fas fa-graduation-cap"></i>FORMATION
+                </h2>
+                <div class="line">
+                    <section class="section_article"> <!-- Formation OpenClassrooms -->
+                        <div class="bullet_point">
+                            <i class="far fa-dot-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                2020<br>À distance
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                OPENCLASSROOMS
+                            </h3>
+                            <p>
+                                <b>Parcours Développeur web</b>
+                            </p>
+                            <p>
+                                Formation de 6 mois sanctionnée par un diplôme de niveau 5 enregistré au RNCP.
+                                Environnement technique : VSC, GIT, HTML, CSS, Sass, JavaScript, Node.js, PHP, SQL, etc.
+                            </p>
+                        </div>
+                    </section> 
+
+                    <section class="section_article"> <!-- Formation Université Grenoble -->
+                        <div class="bullet_point">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                2017<br>À distance
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                UNIVERSITÉ GRENOBLE ALPES
+                            </h3>
+                            <p>
+                                <b>Master 2 en Sciences du langage, spécialité FLE</b>
+                            </p>
+                            <p>
+                                Formation à l'enseignement du Français langue étrangère, à l'ingénierie pédagogique et de formation (conception de matériels et dispositifs).
+                            </p>
+                        </div>
+                    </section>  
+
+                    <section class="section_article"> <!-- Formation Université Aix-Marseille -->
+                        <div class="bullet_point">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                2005<br>Aix-en-Provence
+                            </p>  
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                AIX-MARSEILLE UNIVERSITÉ
+                            </h3>
+                            <p>
+                                <b>Maîtrise en Théorie et pratiques des arts</b>
+                            </p>
+                            <p>
+                                Formation à l'acquisition de techniques, pratiques et savoirs théoriques dans le domaine des arts.
+                            </p>
+                        </div>
+                    </section> 
+                </div>
+                            
+                <!-- Section 6 Expérience -->
+                <h2>
+                    <i class="fas fa-briefcase"></i>EXPÉRIENCE PROFESSIONNELLE
+                </h2>
+                <div class="line">
+                    <section class=section_article> <!-- Expérience GIP FORINVAL -->
+                        <div class="bullet_point">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                Mai 2018 à décembre 2019<br>Amiens, France
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                GIP FORINVAL
+                            </h3>
+                            <p>
+                                <b>Conceptrice de ressources pédagogiques multimédia</b>
+                            </p>
+                            <ul>
+                                <li><p class="margin_0">Médiatisation de modules de formation</p></li>
+                                <li><p class="margin_0">Formation de formateurs à la scénarisation pédagogique</p></li>
+                                <li><p class="margin_0">Conception graphique de supports formatifs</p></li>
+                                <li><p class="margin_0">Veille pédagogique et technique</p></li>
+                            </ul>
+                        </div>
+                    </section>    
+
+                    <section class=section_article> <!-- Expérience Alliance française & Institut français -->
+                        <div class="bullet_point">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                Octobre 2010 à décembre 2019<br>International
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                ALLIANCE FRANÇAISE & INSTITUT FRANÇAIS
+                            </h3>
+                            <p>
+                                <b>Enseignante de Français Langue Étrangère</b>
+                            </p>
+                            <ul>
+                                <li><p class="margin_0">Cours de FLE, FOS et FLAM</p></li>
+                                <li><p class="margin_0">Conception de matériel pédagogique</p></li>
+                                <li><p class="margin_0">Formation de formateurs</p></li>
+                                <li><p class="margin_0">Jury et correction de certifications</p></li>
+                            </ul>
+                        </div>
                     </section>
 
-                <!--Section 8 Recommandations-->
-                    <section id="container_footer_recommandations"> 
-                        <h2 class="margin_top_0"><i class="fas fa-pen"></i>RECOMMANDATIONS</h2>
-
-                            <div class="line">
-                                <div id="container_recommandations">
-
-                                    <div id=recommandation_1> <!--Recommandation AF Bordeaux-->
-                                        <p class="margin_bottom"><b>BERTRAND SEGUES</b></p>
-                                        <p>Responsable pédagogique, AF Bordeaux<br>
-                                        Téléphone : 05.56.79.32.80<br>
-                                        Email : name@email.com</p>
-                                    </div>
-
-                                    <div id=recommandation_2> <!--Recommandation AF Madrid-->
-                                        <p class="margin_bottom"><b>MARI PAZ ROSILLO</b></p>
-                                        <p>Responsable pédagogique, AF Madrid<br>
-                                        Téléphone : 00.34.91.435.15.32<br>
-                                        Email : name@email.com</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <section class=section_article> <!-- Expérience Stage Alliance française Pritina -->
+                        <div class="bullet_point">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="year_place">
+                            <p>
+                                Février 2016 à juin 2016<br>Pristina, Kosovo
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <h3>
+                                ALLIANCE FRANÇAISE
+                            </h3>
+                            <p>
+                                <b>Stage Master 2 Sciences du langage</b>
+                            </p>
+                            <ul>
+                                <li><p class="margin_0">Mise en place de l'offre de cours à distance</p></li>
+                                <li><p class="margin_0">Formation de formateurs</p></li>
+                            </ul>
+                        </div>
                     </section>
-            </footer>
-        </body>
+                </div>
+            </article>
+        </main>
 
+        <footer id="container_footer">
+            <!-- Section 7 Loisirs -->
+            <section id="container_footer_loisirs">
+                <h4>
+                    LOISIRS
+                </h4>  
+                    <div id="container_icons">
+                        <div class="circle_icon"><i class="fas fa-utensils fa-2x"></i></div>
+                        <div class="circle_icon"><i class="fas fa-camera fa-2x"></i></div>
+                        <div class="circle_icon"><i class="fas fa-plane fa-2x"></i></div>
+                    </div>
+            </section>
+            <!-- Section 8 Recommandations -->
+            <section id="container_footer_recommandations"> 
+                <h2 class="margin_top_0">
+                    <i class="fas fa-pen"></i>RECOMMANDATIONS
+                </h2>
+                <div class="line">
+                    <div id="container_recommandations">
+                        <div id=recommandation_1> <!-- Recommandation AF Bordeaux -->
+                            <p class="margin_bottom">
+                                <b>BERTRAND SEGUES</b>
+                            </p>
+                            <p>
+                                Responsable pédagogique, AF Bordeaux<br>
+                                Téléphone : 05.56.79.32.80<br>
+                                Email : name@email.com
+                            </p>
+                        </div>
+                        <div id=recommandation_2> <!-- Recommandation AF Madrid -->
+                            <p class="margin_bottom">
+                                <b>MARI PAZ ROSILLO</b>
+                            </p>
+                            <p>
+                                Responsable pédagogique, AF Madrid<br>
+                                Téléphone : 00.34.91.435.15.32<br>
+                                Email : name@email.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>    
 </html>

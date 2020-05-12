@@ -4,12 +4,12 @@
 @media screen and (max-width: 480px) {
 
     p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
         text-align: justify;
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
         padding: 3% 0% 0% 0%;
     }
 
@@ -19,7 +19,7 @@
     }
     
     h2 {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         padding-right: 5%;
     }
 
@@ -28,15 +28,16 @@
     }
     
     h3 {
-        font-size: 0.9em;
+        font-size: 0.9rem;
         margin-top: 0;
     }
 
     h4 {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         background-color: #616161;
         padding: 1% 0 1% 0;
     }
+
     #container_header {
         flex-direction: column;
     }
@@ -63,7 +64,7 @@
 
     #title_cv {
         text-align: center;
-        padding-bottom: 10%;
+        padding-bottom: 15%;
     }
 
     #container_aside_article {
@@ -75,7 +76,11 @@
         width: auto;
     }
 
-    #text_contact, #text_presentation {
+    #text_presentation {
+        padding: 3% 5% 10% 5%;
+    }
+
+    #text_contact {
         padding: 3% 5% 4% 5%;
     }
 
