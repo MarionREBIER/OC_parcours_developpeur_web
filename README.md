@@ -1,4 +1,4 @@
-💻 Parcours Développeur web OpenClassrooms (6 mois)
+💻  Parcours Développeur web OpenClassrooms (6 mois)
 
 	Projet 1 : Découvrez le quotidien d'un développeur web (20h)
 
