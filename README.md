@@ -1,8 +1,8 @@
 💻  Parcours Développeur web OpenClassrooms (fin : septembre 2020)
 
-	Projet 1 : Découvrez le quotidien d'un développeur web (20h) ✅
+	Projet 1 : Découvrez le quotidien d'un développeur web (20h) ✔️
 
-	Projet 2 : Transformez votre CV en site web (70h) ❎
+	Projet 2 : Transformez votre CV en site web (70h) 🚧
 
 	Projet 3 : Dynamisez une pas web avec des animations CSS (90h) ❌
 
