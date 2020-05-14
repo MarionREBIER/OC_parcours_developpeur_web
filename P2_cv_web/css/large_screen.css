@@ -63,6 +63,15 @@
         list-style-type: none;
     }
 
+    #recommandation_1 {
+        width: 50%;
+    }
+
+    #recommandation_2 {
+        width: 50%;
+        padding-left: 7%;
+    }
+
     #container_footer_loisirs {
         padding-top: 7%;
     }
