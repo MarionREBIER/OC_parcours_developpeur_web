@@ -2,9 +2,9 @@
 
 	Projet 1 : Découvrez le quotidien d'un développeur web (20h) ✔️
 
-	Projet 2 : Transformez votre CV en site web (70h) 🚧
+	Projet 2 : Transformez votre CV en site web (70h) ✔️
 
-	Projet 3 : Dynamisez une page web avec des animations CSS (90h) ❌
+	Projet 3 : Dynamisez une page web avec des animations CSS (90h) 🚧
 
 	Projet 4 : Optimisez un site web existant (30h) ❌
 
