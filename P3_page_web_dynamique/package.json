@@ -1,0 +1,11 @@
+{
+  "name": "p3_page_web_dynamique",
+  "version": "1.0.0",
+  "description": "Crétion d'une page web dynamique",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Marion REBIER",
+  "license": "ISC"
+}
