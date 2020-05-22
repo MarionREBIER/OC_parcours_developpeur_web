@@ -1,4 +1,4 @@
-🎯 Parcours Développeur web OpenClassrooms | Projet 2 | CV web
+💻 Parcours Développeur web OpenClassrooms | Projet 2 | CV web
 
 
 	🛠 Used in this project
