@@ -1,13 +1,12 @@
 💻 Parcours Développeur web OpenClassrooms | Projet 2 | CV web
 
 
-🛠 Used in this project
+	🛠 Used in this project
 
-	HTML5
-	CSS3 (Flexbox & Media queries)
-	GIT
+		Technology : HTML5, CSS3 (Flexbox & Media queries)
+		Methodology : Desktop first
 
-👩🏻 Author : Marion REBIER
+	👩🏻 Author : Marion REBIER 
 
-	LinkedIn : https://www.linkedin.com/in/marionrebier/
-	GitHub : https://github.com/MarionREBIER
+		LinkedIn : https://www.linkedin.com/in/marionrebier/
+		GitPages : https://marionrebier.github.io 
