@@ -9,4 +9,4 @@
 	👩🏻 Author : Marion REBIER 
 
 		LinkedIn : https://www.linkedin.com/in/marionrebier/
-		GitPages : https://marionrebier.github.io/ohmyfood 
+		GitPages : https://marionrebier.github.io.ohmyfood 
