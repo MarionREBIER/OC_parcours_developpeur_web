@@ -14,4 +14,4 @@
 
 	Projet 7 : Créez un réseau social d'entreprise (50h) ❌
 	
-🎯  Diplôme Développeur web (RNCP niveau 5) 
+🎯  Diplôme Développeur web (RNCP niveau 5)  
