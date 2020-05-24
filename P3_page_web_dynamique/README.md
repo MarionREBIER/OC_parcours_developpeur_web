@@ -4,7 +4,7 @@
 	🛠 Used in this project
 
 		Technology : HTML5, CSS3/Sass (Grid layout & Media queries)
-		Methodology : BEM, Mobile first
+		Methodology : BEM (naming), Mobile first
 
 	👩🏻 Author : Marion REBIER 
 
