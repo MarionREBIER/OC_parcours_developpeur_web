@@ -4,7 +4,7 @@
 	🛠 Used in this project
 
 		Technology : HTML5, CSS3 (Flexbox & Media queries)
-		Methodology : Snake case, Desktop first
+		Methodology : Snake case (naming), Desktop first
 
 	👩🏻 Author : Marion REBIER 
 
