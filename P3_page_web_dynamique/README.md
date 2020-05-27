@@ -3,7 +3,7 @@
 
 	🛠 Used in this project
 
-		Technology : HTML5, CSS3/Sass (Grid layout & Media queries)
+		Technology : HTML5, CSS3/Sass (Grid layout)
 		Methodology : BEM, Pattern 7-1, Mobile first
 
 	👩🏻 Author : Marion REBIER 
