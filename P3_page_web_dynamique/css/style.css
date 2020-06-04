@@ -2,13 +2,10 @@
   box-shadow: 0px 0px 10px lightgrey;
 }
 
-.text-align-center, .menu__title, .menu-prev h2, .menu-prev h3, .menu-prev h4, .menu h2, .menu h3, .menu h4, .button {
+.text-align-center, .menu-prev h2, .menu-prev h3, .menu-prev h4, .menu h2, .menu h3, .menu h4, .menu__title, .article-mentions h2, header, footer, .button {
   text-align: center;
 }
 
-.button {
-  margin: 0 0 25px 0;
-}
 .button .button__heading {
   background-color: #579C87;
   color: #FDCB46;
@@ -18,41 +15,41 @@
 .button button:focus {
   outline: 0;
 }
-@media screen and (max-width: 320px) {
-  .button .button__heading {
-    font-size: 1em;
-    padding: 5px 15px 5px 15px;
-  }
-}
 
 header, footer {
-  text-align: center;
   background-color: #579C87;
+}
+header a, footer a {
+  text-decoration: none;
 }
 header a:link, header a:visited, footer a:link, footer a:visited {
   color: #FDCB46;
 }
 
 header {
-  margin-bottom: 30px;
-  padding: 1px 0 1px 0;
+  height: 9%;
+}
+header h1 {
+  margin: 0;
+  padding: 25px;
 }
 
 footer {
-  position: absolute;
-  height: 40px;
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  bottom: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 footer a {
-  padding: 10px 0 10px 0;
+  margin: auto;
 }
 
 .article-mentions {
   margin: 25px 25px 25px 25px;
 }
 .article-mentions h2 {
-  text-align: center;
   margin-bottom: 25px;
 }
 .article-mentions h3, .article-mentions h4 {
@@ -61,35 +58,27 @@ footer a {
 .article-mentions a:link, .article-mentions a:visited {
   color: #212121;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .article-mentions {
     font-size: 0.8em;
   }
 }
 
 .menu-prev {
-  align-content: center;
   cursor: pointer;
-}
-@media screen and (max-width: 320px) {
-  .menu-prev {
-    width: auto;
-    height: 250px;
-    padding-top: 120px;
-  }
 }
 
 .menu-prev--1, .menu-1 {
   background-color: #FCDFDB;
 }
-.menu-prev--1 h2, .menu-prev--1 h3, .menu-prev--1 h4, .menu-prev--1 p, .menu-prev--1 a:link, .menu-prev--1 a:visited, .menu-1 h2, .menu-1 h3, .menu-1 h4, .menu-1 p, .menu-1 a:link, .menu-1 a:visited {
+.menu-prev--1 h2, .menu-prev--1 h3, .menu-prev--1 h4, .menu-prev--1 p, .menu-1 h2, .menu-1 h3, .menu-1 h4, .menu-1 p {
   color: #3C1218;
 }
 
 .menu-prev--2, .menu-2 {
   background-color: #FFF5FE;
 }
-.menu-prev--2 .part__1, .menu-prev--2 a:link, .menu-prev--2 a:visited, .menu-2 .part__1, .menu-2 a:link, .menu-2 a:visited {
+.menu-prev--2 .part__1, .menu-prev--2 h3, .menu-2 .part__1, .menu-2 h3 {
   color: #C67412;
 }
 .menu-prev--2 .part__2, .menu-2 .part__2 {
@@ -100,76 +89,13 @@ footer a {
 }
 
 .menu-prev--3, .menu-3 {
-  background-color: #EDEFEF;
-}
-.menu-prev--3 a:link, .menu-prev--3 a:visited, .menu-3 a:link, .menu-3 a:visited {
   color: #0887FB;
+  background-color: #EDEFEF;
 }
 
 .menu-prev--4, .menu-4 {
-  background-color: #FDFFFD;
-}
-.menu-prev--4 a:link, .menu-prev--4 a:visited, .menu-4 a:link, .menu-4 a:visited {
   color: #72BF56;
-}
-
-.grid-menus {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 25px;
-  column-gap: 25px;
-  margin: 25px 25px 30px 25px;
-}
-@media screen and (max-width: 320px) {
-  .grid-menus {
-    grid-template-columns: 1fr;
-  }
-  .grid-menus .menu-prev--2 h2 {
-    font-size: 1.2em;
-  }
-  .grid-menus h3 {
-    font-size: 1.5em;
-  }
-}
-
-.menu {
-  margin: 0 25px 25px 25px;
-  padding: 10px 8px 10px 8px;
-}
-@media screen and (max-width: 320px) {
-  .menu h2 {
-    font-size: 1.5em;
-    margin-bottom: 35px;
-  }
-  .menu h3 {
-    font-size: 1.1em;
-  }
-  .menu h4 {
-    font-size: 1.2em;
-  }
-  .menu .part__1, .menu .part__2, .menu .part__3 {
-    text-align: center;
-    margin-bottom: 35px;
-  }
-  .menu .part__1 .dish p, .menu .part__2 .dish p {
-    margin: 0;
-  }
-  .menu .price {
-    font-weight: bold;
-    margin-top: 0;
-    font-size: 0.8em;
-    text-align: center;
-  }
-  .menu .price p {
-    margin: 5px 0 20px 0;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .menu__title {
-    font-size: 0.8em;
-    margin-bottom: 20px;
-  }
+  background-color: #FDFFFD;
 }
 
 header, footer, button, .article-mentions, .menu__title {
@@ -203,10 +129,9 @@ header, footer, button, .article-mentions, .menu__title {
 }
 
 body {
-  margin: auto;
-}
-body a {
-  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

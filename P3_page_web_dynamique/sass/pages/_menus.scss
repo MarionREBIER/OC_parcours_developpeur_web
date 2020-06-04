@@ -2,13 +2,12 @@
 
 // Menus preview
 .menu-prev {
-    align-content: center;
     cursor: pointer;
-    @include small-only {
-        width: auto;
-        height: 250px;
-        padding-top: 120px;
-    }
+}
+
+// All (menus preview and big ones)
+.menu__title {
+    @extend .text-align-center;
 }
 
 .menu-prev, .menu {
@@ -18,18 +17,18 @@
     }
 }
 
-// Menu 1 "La note enchantée"
+// Menu 1 "La note enchantée" (menu preview and big one)
 .menu-prev--1, .menu-1 {
     background-color: $color-menu1;
-    h2, h3, h4, p, a:link, a:visited {
+    h2, h3, h4, p {
         color: $color-title-text-menu1;
     }
 }
 
-// Menu 2 "Le chic à la française
+// Menu 2 "Le chic à la française (menu preview and big one)
 .menu-prev--2, .menu-2 {
     background-color: $color-menu2;
-    .part__1, a:link, a:visited {
+    .part__1, h3 {
         color: $color-title-menu2-part1;
     }
     .part__2 {
@@ -40,92 +39,14 @@
     }
 }
 
-// Menu 3 "Le délice des papilles"
+// Menu 3 "Le délice des papilles" (menu preview and big one)
 .menu-prev--3, .menu-3 {
+    color: $color-title-menu3;
     background-color: $color-menu3;
-    a:link, a:visited {
-        color: $color-title-menu3;
-    }
 }
 
-// Menu 4 "La palette du goût"
+// Menu 4 "La palette du goût" (menu preview and big one)
 .menu-prev--4, .menu-4 {
+    color: $color-title-menu4;
     background-color: $color-menu4;
-    a:link, a:visited {
-        color: $color-title-menu4;
-    }
 }
-
-// Responsive
-.grid-menus {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
-    column-gap: 25px;
-    margin: 25px 25px 30px 25px;
-    @include small-only {
-        grid-template-columns: 1fr;
-        .menu-prev--2 {
-            h2 {
-                font-size: 1.2em;
-            }
-        }
-        h3 {
-            font-size: 1.5em; // Répétitions
-        }
-    }
-}
-
-.menu {
-    margin: 0 25px 25px 25px;
-    padding: 10px 8px 10px 8px;
-    @include small-only {
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 35px;
-        }
-        h3 {
-            font-size: 1.1em;
-        }
-        h4 {
-            font-size: 1.2em;
-        }
-        .part__1, .part__2, .part__3 {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-        .part__1, .part__2 {
-            .dish {
-                p {
-                    margin: 0;
-                }
-            }
-        }
-        .price {
-            font-weight: bold;
-            margin-top: 0;
-            font-size: 0.8em; //Répétitions
-            text-align: center;
-            p {
-                margin: 5px 0 20px 0;
-            }
-        }
-    }
-    // @include large-only {
-    //     .part__1, .part__2, .part__3 {
-    //         .dish, .price {
-    //             display: grid;
-    //             grid-template-columns: repeat(2, 1fr);
-    //         }
-    //     }
-    // }
-}
-
-.menu__title {
-    @extend .text-align-center;
-    @include small-only {
-        font-size: 0.8em; //Répétitions
-        margin-bottom: 20px;
-    }
-}
-

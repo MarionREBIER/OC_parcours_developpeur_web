@@ -1,9 +1,9 @@
 // This file contains styles that are specific to the MENTIONS page
 
 .article-mentions {
-    margin: 25px 25px 25px 25px; // Répétition (voir Button)
+    margin: 25px 25px 25px 25px;
     h2 {
-        text-align: center;
+        @extend .text-align-center;
         margin-bottom: 25px;
     }
     h3, h4 {
