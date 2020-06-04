@@ -39,6 +39,7 @@ header {
 }
 
 footer {
+  position: absolute;
   height: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -68,6 +69,7 @@ footer a {
 
 .menu-prev {
   align-content: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 320px) {
   .menu-prev {
@@ -160,12 +162,6 @@ footer a {
   }
   .menu .price p {
     margin: 5px 0 20px 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .menu .part__1 .dish, .menu .part__1 .price, .menu .part__2 .dish, .menu .part__2 .price, .menu .part__3 .dish, .menu .part__3 .price {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

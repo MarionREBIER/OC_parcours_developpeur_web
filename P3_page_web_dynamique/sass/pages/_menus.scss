@@ -3,6 +3,7 @@
 // Menus preview
 .menu-prev {
     align-content: center;
+    cursor: pointer;
     @include small-only {
         width: auto;
         height: 250px;
@@ -110,14 +111,14 @@
             }
         }
     }
-    @include large-only {
-        .part__1, .part__2, .part__3 {
-            .dish, .price {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    }
+    // @include large-only {
+    //     .part__1, .part__2, .part__3 {
+    //         .dish, .price {
+    //             display: grid;
+    //             grid-template-columns: repeat(2, 1fr);
+    //         }
+    //     }
+    // }
 }
 
 .menu__title {
