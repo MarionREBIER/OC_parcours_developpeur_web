@@ -1,0 +1,45 @@
+// This file contains styles that are specific to the TYPOGRAPHY
+
+// Body fonts
+
+header, footer, button, .article-mentions, .menu__title {
+    font-family: $font-primary;
+}
+
+// Menus fonts & fonts-weight
+
+.menu-prev--1, .menu-prev--3, .menu-prev--4, .menu-1, .menu-3, .menu-4 {
+    h3, p {
+        font-family: $font-menu134-subtitle-text;
+    }
+}
+
+.menu-prev--1, .menu-1 {
+    h2, h4 {
+        font-family: $font-menu1-title;
+    }
+    .price {
+        font-weight: bold;
+    }
+}
+
+.menu-prev--2, .menu-2 {
+    h2 {
+        font-family: $font-menu2-title;
+    }
+    p, h3 {
+        font-family: $font-menu2-subtitle-text;
+    }
+}
+
+.menu-prev--3, .menu-3 {
+    h2 {
+        font-family: $font-menu3-title;
+    }
+}
+
+.menu-prev--4, .menu-4 {
+    h2 {
+        font-family: $font-menu4-title;
+    }
+}

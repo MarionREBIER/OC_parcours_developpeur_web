@@ -1,0 +1,23 @@
+// This file contains all styles related to the HEADER of the site
+
+header, footer {
+    text-align: center;
+    background-color: $color-primary;
+    a:link, a:visited {
+        color: $text-color-primary;
+    }
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 1px 0 1px 0;
+}
+
+footer {
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    a {
+        padding: 10px 0 10px 0;
+    }
+}

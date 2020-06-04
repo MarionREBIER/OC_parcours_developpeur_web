@@ -1,0 +1,216 @@
+.box-shadow, .menu-prev, .menu {
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+.text-align-center, .menu__title, .menu-prev h2, .menu-prev h3, .menu-prev h4, .menu h2, .menu h3, .menu h4, .button {
+  text-align: center;
+}
+
+.button {
+  margin: 0 0 25px 0;
+}
+.button .button__heading {
+  background-color: #579C87;
+  color: #FDCB46;
+  border-radius: 0.5em;
+  border: none;
+}
+.button button:focus {
+  outline: 0;
+}
+@media screen and (max-width: 320px) {
+  .button .button__heading {
+    font-size: 1em;
+    padding: 5px 15px 5px 15px;
+  }
+}
+
+header, footer {
+  text-align: center;
+  background-color: #579C87;
+}
+header a:link, header a:visited, footer a:link, footer a:visited {
+  color: #FDCB46;
+}
+
+header {
+  margin-bottom: 30px;
+  padding: 1px 0 1px 0;
+}
+
+footer {
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer a {
+  padding: 10px 0 10px 0;
+}
+
+.article-mentions {
+  margin: 25px 25px 25px 25px;
+}
+.article-mentions h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.article-mentions h3, .article-mentions h4 {
+  margin-top: 20px;
+}
+.article-mentions a:link, .article-mentions a:visited {
+  color: #212121;
+}
+@media screen and (max-width: 320px) {
+  .article-mentions {
+    font-size: 0.8em;
+  }
+}
+
+.menu-prev {
+  align-content: center;
+}
+@media screen and (max-width: 320px) {
+  .menu-prev {
+    width: auto;
+    height: 250px;
+    padding-top: 120px;
+  }
+}
+
+.menu-prev--1, .menu-1 {
+  background-color: #FCDFDB;
+}
+.menu-prev--1 h2, .menu-prev--1 h3, .menu-prev--1 h4, .menu-prev--1 p, .menu-prev--1 a:link, .menu-prev--1 a:visited, .menu-1 h2, .menu-1 h3, .menu-1 h4, .menu-1 p, .menu-1 a:link, .menu-1 a:visited {
+  color: #3C1218;
+}
+
+.menu-prev--2, .menu-2 {
+  background-color: #FFF5FE;
+}
+.menu-prev--2 .part__1, .menu-prev--2 a:link, .menu-prev--2 a:visited, .menu-2 .part__1, .menu-2 a:link, .menu-2 a:visited {
+  color: #C67412;
+}
+.menu-prev--2 .part__2, .menu-2 .part__2 {
+  color: #A56799;
+}
+.menu-prev--2 .part__3, .menu-2 .part__3 {
+  color: #6E4CCC;
+}
+
+.menu-prev--3, .menu-3 {
+  background-color: #EDEFEF;
+}
+.menu-prev--3 a:link, .menu-prev--3 a:visited, .menu-3 a:link, .menu-3 a:visited {
+  color: #0887FB;
+}
+
+.menu-prev--4, .menu-4 {
+  background-color: #FDFFFD;
+}
+.menu-prev--4 a:link, .menu-prev--4 a:visited, .menu-4 a:link, .menu-4 a:visited {
+  color: #72BF56;
+}
+
+.grid-menus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
+  column-gap: 25px;
+  margin: 25px 25px 30px 25px;
+}
+@media screen and (max-width: 320px) {
+  .grid-menus {
+    grid-template-columns: 1fr;
+  }
+  .grid-menus .menu-prev--2 h2 {
+    font-size: 1.2em;
+  }
+  .grid-menus h3 {
+    font-size: 1.5em;
+  }
+}
+
+.menu {
+  margin: 0 25px 25px 25px;
+  padding: 10px 8px 10px 8px;
+}
+@media screen and (max-width: 320px) {
+  .menu h2 {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+  }
+  .menu h3 {
+    font-size: 1.1em;
+  }
+  .menu h4 {
+    font-size: 1.2em;
+  }
+  .menu .part__1, .menu .part__2, .menu .part__3 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .menu .part__1 .dish p, .menu .part__2 .dish p {
+    margin: 0;
+  }
+  .menu .price {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .menu .price p {
+    margin: 5px 0 20px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu .part__1 .dish, .menu .part__1 .price, .menu .part__2 .dish, .menu .part__2 .price, .menu .part__3 .dish, .menu .part__3 .price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__title {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+  }
+}
+
+header, footer, button, .article-mentions, .menu__title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-prev--1 h3, .menu-prev--1 p, .menu-prev--3 h3, .menu-prev--3 p, .menu-prev--4 h3, .menu-prev--4 p, .menu-1 h3, .menu-1 p, .menu-3 h3, .menu-3 p, .menu-4 h3, .menu-4 p {
+  font-family: "Kalam", sans-serif;
+}
+
+.menu-prev--1 h2, .menu-prev--1 h4, .menu-1 h2, .menu-1 h4 {
+  font-family: "Devonshire", sans-serif;
+}
+.menu-prev--1 .price, .menu-1 .price {
+  font-weight: bold;
+}
+
+.menu-prev--2 h2, .menu-2 h2 {
+  font-family: "Croissant One", serif;
+}
+.menu-prev--2 p, .menu-prev--2 h3, .menu-2 p, .menu-2 h3 {
+  font-family: "Gelasio", serif;
+}
+
+.menu-prev--3 h2, .menu-3 h2 {
+  font-family: "Dancing Script", sans-serif;
+}
+
+.menu-prev--4 h2, .menu-4 h2 {
+  font-family: "Kaushan Script", sans-serif;
+}
+
+body {
+  margin: auto;
+}
+body a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

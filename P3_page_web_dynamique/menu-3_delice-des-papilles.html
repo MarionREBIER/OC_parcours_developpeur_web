@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menus.css">
+    <meta name="description" content="Ohmyfood! La startup qui vous permet d'éviter l'attente dans les restaurants : composez votre menu en ligne !">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Gelasio&family=Kalam&family=Kaushan+Script&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- LOGO -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Le délice des papilles - Menu</title>
 </head>
 <body>
     <header>
-        <h1><a ref="index.html">ohmyfood</a></h1>
+        <h1 class="header__heading">
+            <a href="index.html" title="Page d'accueil">ohmyfood</a>
+        </h1>
     </header>
-        
-        <p>Le délice des papilles</p>
+    
+    <!-- Titre "Le délice des papilles" haut de page -->
+    <section class="menu__title">
+        <h2>Le délice des papilles</h2>
+    </section>
 
-    <article>
-        <!-- Titre "Le délice des papilles" haut de page -->
+    <article class="menu menu-3">
+
+        <!-- Titre "Le délice des papilles" haut de menu -->
         <section>
             <h2>Le délice des papilles</h2>
         </section>
+
         <!-- Section 1 : Entrées -->
-        <section>
+        <section class="part__1">
             <h3>Pour bien commencer</h3>
-            <p>Tartare de thon assaisonné au yuzu</p>
-            <p>55€</p>
-            <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
-            <p>89€</p>
-            <p>Velouté de cèpes aux truffes</p>
-            <p>56€</p> 
+            <div class="dish">
+                <p>Tartare de thon assaisonné au yuzu</p>
+            </div>
+            <div class="price">
+                <p>55€</p>
+            </div>
+            <div class="dish">
+                <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
+            </div>
+            <div class="price">
+                <p>89€</p>
+            </div>
+            <div class="dish">
+                <p>Velouté de cèpes aux truffes</p>
+            </div>
+            <div class="price">
+                <p>56€</p>
+            </div> 
         </section>
+
         <!-- Section 2 : Plats -->
-        <section>
+        <section class="part__2">
             <h3>Pour bien continuer</h3>
-            <p>Poulet rôti aux herbes de Provence et sa crème de truffe</p>
-            <p>110€</p>
-            <p>Langouste rôtie et ses légumes de saison</p>
-            <p>225€</p>
-            <p>Côte de boeuf Angus et sa purée de panais</p>
-            <p>115€</p>
+            <div class="dish">
+                <p>Poulet rôti aux herbes de Provence et sa crème de truffe</p>
+            </div>
+            <div class="price">
+                <p>110€</p>
+            </div>
+            <div class="dish">
+                <p>Langouste rôtie et ses légumes de saison</p>
+            </div>
+            <div class="price">
+                <p>225€</p>
+            </div>
+            <div class="dish">
+                <p>Côte de boeuf Angus et sa purée de panais</p>
+            </div>
+            <div class="price">
+                <p>115€</p>
+            </div>
         </section>
+        
         <!-- Section 3 : Desserts -->
-        <section>
+        <section class="part__3">
             <h3>Pour bien terminer</h3>
-            <p>Farandole de desserts du chef</p>
-            <p>55€</p>
-            <p>Crème brûlée revisitée</p>
-            <p>60€</p>
-            <p>Tiramisu à la noisette</p>
-            <p>55€</p>
+            <div class="dish">
+                <p>Farandole de desserts du chef</p>
+            </div>
+            <div class="price">
+                <p>55€</p>
+            </div>
+            <div class="dish">
+                <p>Crème brûlée revisitée</p>
+            </div>
+            <div class="price">
+                <p>60€</p>
+            </div>
+            <div class="dish">
+                <p>Tiramisu à la noisette</p>
+            </div>
+            <div class="price">
+                <p>55€</p>
+            </div>
         </section>
     </article>
 
     <footer>
-        <nav>
-            <a href="mentions.html" target="_blank">Mentions légales</a>
-            <a href="mailto:contact@ohmyfood.com" target="_blank">Contactez-nous</a>
-        </nav>
+        <a href="mentions.html" title="Mentions légales" target="_blank">Mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com" title="Contactez-nous" target="_blank">Contactez-nous</a>
     </footer>
 </body>
 </html>

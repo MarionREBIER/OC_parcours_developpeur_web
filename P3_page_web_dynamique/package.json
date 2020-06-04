@@ -4,8 +4,13 @@
   "description": "Crétion d'une page web dynamique",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Marion REBIER",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
 }

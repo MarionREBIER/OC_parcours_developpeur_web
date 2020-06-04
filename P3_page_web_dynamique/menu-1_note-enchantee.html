@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menus.css">
+    <meta name="description" content="Ohmyfood! La startup qui vous permet d'éviter l'attente dans les restaurants : composez votre menu en ligne !">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Gelasio&family=Kalam&family=Kaushan+Script&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- LOGO -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>La note enchantée - Menu</title>
 </head>
 <body>
     <header>
-        <h1><a ref="index.html">ohmyfood</a></h1>
+        <h1 class="header__heading">
+            <a href="index.html" title="Page d'accueil">ohmyfood</a>
+        </h1>
     </header>
-        
-        <p>La note enchantée</p>
+    
+    <!-- Titre "La note enchantée" haut de page -->
+    <section class="menu__title">
+        <h2>La note enchantée</h2>
+    </section>
 
-    <article>
-        <!-- Titre "La note enchantée" haut de page -->
+    <article class="menu menu-1">
+
+        <!-- Titre "La note enchantée" haut de menu -->
         <section>
             <h2>La note enchantée</h2>
         </section>
+
         <!-- Section 1 : Entrées -->
-        <section>
+        <section class="part__1">
             <h3>Prélude</h3>
-            <p>Ravioles de foie gras accompagnées de leur crème à la truffe</p>
-            <p>98€</p>
-            <p>Caviar osciètre sur blini à la farine de blé noir</p>
-            <p>115€</p>
-            <p>Homard et espuma de potiron mariné aux zests d'orange</p>
-            <p>89€</p>
-            <p>Foie gras de canard cuit entier, confiture de figue et pain toasté</p>   
-            <p>105€</p>     
+            <div class="dish">
+                <p>Ravioles de foie gras accompagnées de leur crème à la truffe</p>
+            </div>
+            <div class="price">
+                <p>98€</p>
+            </div>
+            <div class="dish">
+                <p>Caviar osciètre sur blini à la farine de blé noir</p>
+            </div>
+            <div class="price">
+                <p>115€</p>
+            </div>
+            <div class="dish">
+                <p>Homard et espuma de potiron mariné aux zests d'orange</p>
+            </div>
+            <div class="price">
+                <p>89€</p>
+            </div>
+            <div class="dish">
+                <p>Foie gras de canard cuit entier, confiture de figue et pain toasté</p>   
+            </div>
+            <div class="price">
+                <p>105€</p>
+            </div>     
         </section>
+
         <!-- Section 2 : Plats -->
-        <section>
+        <section class="part__2">
             <h3>Point d'orgue</h3>
-            <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-            <p>102€</p>
-            <p>Langoustine poêlée, purée de patate douce</p>
-            <p>205€</p>
-            <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-            <p>169€</p>
+            <div class="dish">
+                <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
+            </div>
+            <div class="price">
+                <p>102€</p>
+            </div>
+            <div class="dish">
+                <p>Langoustine poêlée, purée de patate douce</p>
+            </div>
+            <div class="price">
+                <p>205€</p>
+            </div>
+            <div class="dish">
+                <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
+            </div>
+            <div class="price">
+                <p>169€</p>
+            </div>
         </section>
+
         <!-- Section 3 : Desserts -->
-        <section>
+        <section class="part__3">
             <h3>Mouvement final</h3>
-            <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-            <p>Baba au rhum revisité avec son coulis de citron</p>
-            <p>Tarte au citron meringuée destructurée</p>
+            <div class="dish">
+                <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
+            </div>
+            <div class="dish">
+                <p>Baba au rhum revisité avec son coulis de citron</p>
+            </div>
+            <div class="dish">
+                <p>Tarte au citron meringuée destructurée</p>
+            </div>
         </section>
+        
         <!-- Titre "La note enchantée" bas de page -->
         <section>
-            <p>La note enchantée</p>
+            <h4>La note enchantée</h4>
         </section>
     </article>
 
     <footer>
-        <nav>
-            <a href="mentions.html" target="_blank">Mentions légales</a>
-            <a href="mailto:contact@ohmyfood.com" target="_blank">Contactez-nous</a>
-        </nav>
+        <a href="mentions.html" title="Mentions légales" target="_blank">Mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com" title="Contactez-nous" target="_blank">Contactez-nous</a>
     </footer>
 </body>
 </html>

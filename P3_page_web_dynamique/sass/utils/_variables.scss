@@ -1,0 +1,38 @@
+// This file contains all site Sass VARIABLES
+
+// Primary colors
+$color-primary: #579C87;
+$text-color-primary: #FDCB46;
+
+// Menus background colors
+$color-menu1: #FCDFDB;
+$color-menu2: #FFF5FE;
+$color-menu3: #EDEFEF;
+$color-menu4: #FDFFFD;
+
+// Title & text menus colors
+$color-title-text-menu1: #3C1218;
+$color-title-menu2-part1: #C67412; // Title and part1 color
+$color-menu2-part2: #A56799;
+$color-menu2-part3: #6E4CCC;
+$color-title-menu3: #0887FB;
+$color-title-menu4: #72BF56;
+
+// Mentions color
+$text-color-mentions: #212121;
+
+// Fonts
+$font-primary: "Montserrat", sans-serif;
+$font-menu1-title: "Devonshire", sans-serif;
+$font-menu134-subtitle-text: "Kalam", sans-serif;
+$font-menu2-title: "Croissant One", serif;
+$font-menu2-subtitle-text: "Gelasio", serif;
+$font-menu3-title: "Dancing Script", sans-serif;
+$font-menu4-title: "Kaushan Script", sans-serif;
+
+// Breakpoints map
+$breakpoints: (
+    small: 320px,
+    medium: 768px,
+    large: 1024px,
+);

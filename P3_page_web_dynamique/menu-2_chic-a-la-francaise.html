@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menus.css">
+    <meta name="description" content="Ohmyfood! La startup qui vous permet d'éviter l'attente dans les restaurants : composez votre menu en ligne !">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Gelasio&family=Kalam&family=Kaushan+Script&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- LOGO -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Le chic à la française - Menu</title>
 </head>
 <body>
     <header>
-        <h1><a ref="index.html">ohmyfood</a></h1>
+        <h1 class="header__heading">
+            <a href="index.html" title="Page d'accueil">ohmyfood</a>
+        </h1>
     </header>
-        
-        <p>Le chic à la française</p>
+    
+    <!-- Titre "Le chic à la française" haut de page -->
+    <section class="menu__title">
+        <h2>Le chic à la française</h2>
+    </section>
 
-    <article>
-        <!-- Titre "Le chic à la française" haut de page -->
+    <article class="menu menu-2">
+
+        <!-- Titre "Le chic à la française" haut de menu -->
         <section>
             <h2>Le chic à la française</h2>
         </section>
+
         <!-- Section 1 : Entrées -->
-        <section>
+        <section class="part__1">
             <h3>Pour se mettre en appétit</h3>
-            <p>Tartare de poulpe acidulé aux zets d'orange</p>
-            <p>79€</p>
-            <p>Velouté de légumes d'antan</p>
-            <p>57€</p>
-            <p>Soupe à l'oignon revisitée</p>
-            <p>57€</p> 
+            <div class="dish">
+                <p>Tartare de poulpe acidulé aux zets d'orange</p>
+            </div>
+            <div class="price">
+                <p>79€</p>
+            </div>
+            <div class="dish">
+                <p>Velouté de légumes d'antan</p>
+            </div>
+            <div class="price">
+                <p>57€</p>
+            </div>
+            <div class="dish">
+                <p>Soupe à l'oignon revisitée</p>
+            </div>
+            <div class="price">
+                <p>57€</p>
+            </div> 
         </section>
+
         <!-- Section 2 : Plats -->
-        <section>
+        <section class="part__2">
             <h3>Plaisir des papilles</h3>
-            <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
-            <p>95€</p>
-            <p>Magret de canard et parmentier de pommes de terres</p>
-            <p>88€</p>
-            <p>Pigeonneau d'Ille-et-Vilaine sur son lit de gnocchis aux légumes</p>
-            <p>175€</p>
+            <div class="dish">
+                <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+            </div>
+            <div class="price">
+                <p>95€</p>
+            </div>
+            <div class="dish">
+                <p>Magret de canard et parmentier de pommes de terres</p>
+            </div>
+            <div class="price">
+                <p>88€</p>
+            </div>
+            <div class="dish">
+                <p>Pigeonneau d'Ille-et-Vilaine sur son lit de gnocchis aux légumes</p>
+            </div>
+            <div class="price">
+                <p>175€</p>
+            </div>
         </section>
+        
         <!-- Section 3 : Desserts -->
-        <section>
+        <section class="part__3">
             <h3>Gourmandises sucrées</h3>
-            <p>Pétales de violettes glacés et purée de noisettes</p>
-            <p>Fondant au chocolat revisité</p>
-            <p>Millefeuille croustillant</p>
+            <div class="dish">
+                <p>Pétales de violettes glacés et purée de noisettes</p>
+            </div>
+            <div class="dish">
+                <p>Fondant au chocolat revisité</p>
+            </div>
+            <div class="dish">
+                <p>Millefeuille croustillant</p>
+            </div>
         </section>
     </article>
 
     <footer>
-        <nav>
-            <a href="mentions.html" target="_blank">Mentions légales</a>
-            <a href="mailto:contact@ohmyfood.com" target="_blank">Contactez-nous</a>
-        </nav>
+        <a href="mentions.html" title="Mentions légales" target="_blank">Mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com" title="Contactez-nous" target="_blank">Contactez-nous</a>
     </footer>
 </body>
 </html>
