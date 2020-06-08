@@ -2,7 +2,12 @@
 
 body {
     width: 100%;
-    //height: 100%;
+    height: 100%;
     margin: 0;
-    padding-bottom: 5%; // Régler en fonction de la hauteur du footer pour éviter les superpositions (ex : si hauteur footer = 5em alors padding-bottom = 5em)
+    padding-bottom: 50px;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
 }

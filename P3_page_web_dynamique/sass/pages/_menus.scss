@@ -5,11 +5,7 @@
     cursor: pointer;
 }
 
-// All (menus preview and big ones)
-.menu__title {
-    @extend .text-align-center;
-}
-
+// All (menus preview and "big" menus)
 .menu-prev, .menu {
     @extend .box-shadow;
     h2, h3, h4 {
@@ -17,7 +13,101 @@
     }
 }
 
-// Menu 1 "La note enchantée" (menu preview and big one)
+// Home page (menus preview)
+.grid-menus {
+    display: grid;
+    margin: 40px 25px 40px 25px;
+    @include xx-small-only {
+        grid-template-columns: auto; 
+        grid-template-rows: 380px 380px 380px 380px;
+        row-gap: 25px;
+    }
+}
+
+.menu-prev {
+    display : grid;
+    align-content: center;
+
+}
+
+// One page menus : layout
+.menu__title {
+    @extend .text-align-center;
+    margin-top: 40px;
+}
+
+.menu-1 {
+    .price {
+        p {
+            background-color: $color-price-menu1; 
+        }
+    }
+}
+
+.menu-2 {
+    .price {
+        p {
+            background-color: $color-price-menu2; 
+        }
+    }
+}
+
+.menu-3 {
+    .price {
+        p {
+            background-color: $color-price-menu3; 
+        }
+    }
+}
+
+.menu-4 {
+    .price {
+        p {
+            background-color: $color-price-menu4; 
+        }
+    }
+}
+
+
+.menu {
+    text-align: center;
+    margin: 25px 25px 40px 25px;
+    padding: 20px 20px 40px 20px;
+    .part__1, .part__2, .part__3 {
+        margin-top: 40px;
+        display: grid;
+        .part__123__title {
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            h3 {
+                grid-column: 2/3;
+            }
+        }
+    }
+    @include xx-small-only {  
+        h3 {
+            margin: 20px 0 5px 0;
+        }
+        .dish {
+            p{
+                margin: 25px 0 8px 0;
+            }
+        }
+        .price {
+            height: 50px;
+            font-weight: bold;
+            p {
+                margin: auto;
+                padding: 10px 0 10px 0;
+                border-radius: 50%;
+                width: 45px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+// Menu 1 "La note enchantée" (menu preview and one page menu)
 .menu-prev--1, .menu-1 {
     background-color: $color-menu1;
     h2, h3, h4, p {
@@ -25,28 +115,55 @@
     }
 }
 
-// Menu 2 "Le chic à la française (menu preview and big one)
+// Menu 2 "Le chic à la française (menu preview and one page menu)
 .menu-prev--2, .menu-2 {
     background-color: $color-menu2;
-    .part__1, h3 {
+    h2 {
+        background: linear-gradient(160deg, $color-title-menu2-part1 40%, $color-menu2-part3 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3 {
         color: $color-title-menu2-part1;
+    }
+}
+
+.menu-2 {
+    .part__1 {
+        color: $color-title-menu2-part1;
+        h3 {
+            color: $color-title-menu2-part1;
+        }
     }
     .part__2 {
         color: $color-menu2-part2;
+        h3 {
+            color: $color-menu2-part2;
+        }
     }
-    .part__3 {
+    .part__3, h3 {
         color: $color-menu2-part3;
     }
 }
 
-// Menu 3 "Le délice des papilles" (menu preview and big one)
+// Menu 3 "Le délice des papilles" (menu preview and one page menu)
 .menu-prev--3, .menu-3 {
     color: $color-title-menu3;
     background-color: $color-menu3;
+    h2 {
+        background: linear-gradient(160deg, #001ed9 40%, #0889fb 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-// Menu 4 "La palette du goût" (menu preview and big one)
+// Menu 4 "La palette du goût" (menu preview and one page menu)
 .menu-prev--4, .menu-4 {
     color: $color-title-menu4;
     background-color: $color-menu4;
+    h2 {
+        background: linear-gradient(160deg, #3e923a 40%, #beff7f 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

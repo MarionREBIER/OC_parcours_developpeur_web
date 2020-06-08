@@ -2,20 +2,38 @@
 
 // Media queries
 
+@mixin xx-small-only {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: xx-small)) {
+        @content;
+    }
+}
+
+@mixin x-small-only {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: x-small)) {
+        @content;
+    }
+}
+
 @mixin small-only {
-    @media screen and (max-width: map-get($map: $breakpoints, $key: small)) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: small)) {
         @content;
     }
 }
 
 @mixin medium-only {
-    @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: medium)) {
         @content;
     }
 }
 
 @mixin large-only {
-    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: large)) {
+        @content;
+    }
+}
+
+@mixin x-large-only {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: x-large)) {
         @content;
     }
 }

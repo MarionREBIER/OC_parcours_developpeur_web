@@ -12,7 +12,4 @@
     a:link, a:visited {
         color: $text-color-mentions;
     }
-    @include small-only {
-        font-size: 0.8em;
-    }
 }

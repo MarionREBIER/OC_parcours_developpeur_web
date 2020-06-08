@@ -15,8 +15,14 @@ $color-title-text-menu1: #3C1218;
 $color-title-menu2-part1: #C67412; // Title and part1 color
 $color-menu2-part2: #A56799;
 $color-menu2-part3: #6E4CCC;
-$color-title-menu3: #0887FB;
+$color-title-menu3: #0887FB; 
 $color-title-menu4: #72BF56;
+
+// Prices background colors (on page menus)
+$color-price-menu1: #f8b5ac;
+$color-price-menu2: #f9c8dc;
+$color-price-menu3: #d2d7d7;
+$color-price-menu4: #eef7ea;
 
 // Mentions color
 $text-color-mentions: #212121;
@@ -32,7 +38,10 @@ $font-menu4-title: "Kaushan Script", sans-serif;
 
 // Breakpoints map
 $breakpoints: (
-    small: 480px,
-    medium: 768px,
-    large: 1024px,
+    xx-small: 320px, // Smaller points viewpoint
+    x-small: 480px, // Small devices and most phones
+    small: 768px, // Most tablets
+    medium: 992px, // Smaller desktop viewpoints
+    large: 1200px, // Large devices and wide screens
+    x-large: 1440px, // Larger devices and wide screens
 );
