@@ -10,9 +10,10 @@ header, footer {
 
 header {
     display: grid;
-    height: 90px;
+    height: 70px;
     h1 {
         margin: auto;
+        font-size: 2em;
     }
 }
 
@@ -20,10 +21,21 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: grid;
     grid-auto-flow: column;
     a {
-        margin: auto;
+        @include xx-small-only {
+            margin: auto;
+        }
+        @include small-only {
+            align-content: flex-start;
+        }
+    }
+    @include medium-only {
+        width: 50%;
+    }
+    @include x-large-only {
+        width: 720px;
     }
 }

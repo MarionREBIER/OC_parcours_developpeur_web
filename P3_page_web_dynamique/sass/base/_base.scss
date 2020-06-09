@@ -1,11 +1,20 @@
 // This file contains very basic styles
-
 body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     font-size: 100%;
+    @include medium-only {
+        width: 50%;
+        margin: auto;
+        border-left: 0.5px solid lightgrey;
+        border-right: 0.5px solid lightgrey;
+    }
+    @include x-large-only {
+        width: 720px;
+        margin: auto;
+    }
 }
 
 a {

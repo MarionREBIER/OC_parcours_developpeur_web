@@ -1,19 +1,24 @@
 // This file contains all styles related to the BUTTON component
 
 .button {
+    margin-bottom: 30px; 
     @extend .text-align-center;
     .button__heading {
+        padding: 8px 30px 8px 30px;
+        font-size: 1.2em;
         background-color: $color-primary;
         color: $text-color-primary;
         border-radius: 0.5em;
         border: none;
     }   
-       
     button:focus {
         outline: 0;
     }
     @include xx-small-only {
         display: none;
+    }
+    @include small-only {
+        display: block;
     }
 }
 

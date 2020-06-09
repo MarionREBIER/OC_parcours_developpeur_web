@@ -6,7 +6,12 @@
   text-align: center;
 }
 
+.button {
+  margin-bottom: 30px;
+}
 .button .button__heading {
+  padding: 8px 30px 8px 30px;
+  font-size: 1.2em;
   background-color: #579C87;
   color: #FDCB46;
   border-radius: 0.5em;
@@ -20,6 +25,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .button {
+    display: block;
+  }
+}
 
 header, footer {
   background-color: #579C87;
@@ -30,22 +40,40 @@ header a:link, header a:visited, footer a:link, footer a:visited {
 
 header {
   display: grid;
-  height: 90px;
+  height: 70px;
 }
 header h1 {
   margin: auto;
+  font-size: 2em;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: grid;
   grid-auto-flow: column;
 }
-footer a {
-  margin: auto;
+@media screen and (min-width: 320px) {
+  footer a {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    align-content: flex-start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    width: 720px;
+  }
 }
 
 .article-mentions {
@@ -63,78 +91,77 @@ footer a {
 
 .menu-prev {
   cursor: pointer;
+  display: grid;
+  align-content: center;
+}
+.menu-prev h3 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+.menu-prev--2 h2 {
+  font-size: 1.2em;
+}
+
+.menu-prev--3 h2, .menu-prev--4 h2 {
+  font-size: 1.7em;
+}
+.menu-prev--3 h3, .menu-prev--4 h3 {
+  font-weight: normal;
 }
 
 .grid-menus {
   display: grid;
-  margin: 40px 25px 40px 25px;
 }
 @media screen and (min-width: 320px) {
   .grid-menus {
     grid-template-columns: auto;
     grid-template-rows: 380px 380px 380px 380px;
-    row-gap: 25px;
+    row-gap: 35px;
+    margin: 40px 25px 30px 25px;
   }
 }
-
-.menu-prev {
-  display: grid;
-  align-content: center;
-}
-
-.menu__title {
-  margin-top: 40px;
-}
-
-.menu-1 .price p {
-  background-color: #f8b5ac;
-}
-
-.menu-2 .price p {
-  background-color: #f9c8dc;
-}
-
-.menu-3 .price p {
-  background-color: #d2d7d7;
-}
-
-.menu-4 .price p {
-  background-color: #eef7ea;
-}
-
-.menu {
-  text-align: center;
-  margin: 25px 25px 40px 25px;
-  padding: 20px 20px 40px 20px;
-}
-.menu .part__1, .menu .part__2, .menu .part__3 {
-  margin-top: 40px;
-  display: grid;
-}
-.menu .part__1 .part__123__title, .menu .part__2 .part__123__title, .menu .part__3 .part__123__title {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.menu .part__1 .part__123__title h3, .menu .part__2 .part__123__title h3, .menu .part__3 .part__123__title h3 {
-  grid-column: 2/3;
-}
-@media screen and (min-width: 320px) {
-  .menu h3 {
-    margin: 20px 0 5px 0;
+@media screen and (min-width: 480px) {
+  .grid-menus {
+    grid-template-rows: 406px 406px 406px 406px;
+    margin: 60px 37px 50px 37px;
+    row-gap: 47px;
   }
-  .menu .dish p {
-    margin: 25px 0 8px 0;
+}
+@media screen and (min-width: 768px) {
+  .grid-menus {
+    grid-template-columns: auto auto;
+    grid-template-rows: 430px 430px;
+    column-gap: 54px;
+    row-gap: 54px;
+    margin: 54px 84px 44px 84px;
   }
-  .menu .price {
-    height: 50px;
-    font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .grid-menus {
+    grid-template-columns: auto auto;
+    grid-template-rows: 287px 287px;
+    column-gap: 36px;
+    row-gap: 36px;
+    margin: 36px 56px 26px 56px;
   }
-  .menu .price p {
-    margin: auto;
-    padding: 10px 0 10px 0;
-    border-radius: 50%;
-    width: 45px;
-    height: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .grid-menus {
+    grid-template-columns: auto auto;
+    grid-template-rows: 336px 336px;
+    column-gap: 42px;
+    row-gap: 42px;
+    margin: 42px 66px 32px 66px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .grid-menus {
+    grid-template-columns: 258px 258px;
+    grid-template-rows: 403px 403px;
+    column-gap: 51px;
+    row-gap: 51px;
+    margin: 51px 79px 41px 79px;
   }
 }
 
@@ -193,6 +220,176 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 
+.menu__title {
+  margin-top: 40px;
+}
+@media screen and (min-width: 320px) {
+  .menu__title h2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__title h2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu {
+    text-align: center;
+    margin: 25px 25px 40px 25px;
+    padding: 20px 20px 40px 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .menu {
+    margin: 45px 30px 45px 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    margin: 25px 60px 55px 60px;
+    padding: 60px 60px 60px 60px;
+  }
+}
+.menu .part__1, .menu .part__2, .menu .part__3 {
+  margin-top: 30px;
+  display: grid;
+}
+.menu .part__1 .part__123__title, .menu .part__2 .part__123__title, .menu .part__3 .part__123__title {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.menu .part__1 .part__123__title h3, .menu .part__2 .part__123__title h3, .menu .part__3 .part__123__title h3 {
+  grid-column: 2/3;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu .part__1 .part__123__title h3, .menu .part__2 .part__123__title h3, .menu .part__3 .part__123__title h3 {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .part__1 .part__123__food, .menu .part__2 .part__123__food, .menu .part__3 .part__123__food {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu .part__1 .part__123__food .dish p, .menu .part__2 .part__123__food .dish p, .menu .part__3 .part__123__food .dish p {
+    margin: 25px 0 8px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .part__1 .part__123__food .dish p, .menu .part__2 .part__123__food .dish p, .menu .part__3 .part__123__food .dish p {
+    margin: 10px auto 10px 0;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu .part__1 .part__123__food .price p, .menu .part__2 .part__123__food .price p, .menu .part__3 .part__123__food .price p {
+    margin: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 50%;
+    width: 45px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .part__1 .part__123__food .price p, .menu .part__2 .part__123__food .price p, .menu .part__3 .part__123__food .price p {
+    padding: 0;
+    margin: 10px 0 10px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-1 h2, .menu-2 h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 h4, .menu-2 h4 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 .part__3 .dish p, .menu-2 .part__3 .dish p {
+    text-align: left;
+    margin: 10px auto 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-3 h2, .menu-4 h2 {
+    font-size: 3em;
+    margin: 50px 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu-1 h3, .menu-1 .price, .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu-1 .price p {
+    background-color: #f8b5ac;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 .price p {
+    background-color: #FCDFDB;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu-2 .price p {
+    background-color: #f9c8dc;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-2 .price p {
+    background-color: #FFF5FE;
+  }
+}
+
+.menu-3 p, .menu-3 h3 {
+  color: black;
+}
+@media screen and (min-width: 320px) {
+  .menu-3 .price p {
+    background-color: #d2d7d7;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-3 .price p {
+    background-color: #EDEFEF;
+  }
+}
+
+.menu-4 p, .menu-4 h3 {
+  color: black;
+}
+@media screen and (min-width: 320px) {
+  .menu-4 .price p {
+    background-color: #eef7ea;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-4 .price p {
+    background-color: #FDFFFD;
+  }
+}
+
 header, footer, button, .article-mentions, .menu__title {
   font-family: "Montserrat", sans-serif;
 }
@@ -227,8 +424,22 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   font-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 50%;
+    margin: auto;
+    border-left: 0.5px solid lightgrey;
+    border-right: 0.5px solid lightgrey;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    width: 720px;
+    margin: auto;
+  }
 }
 
 a {
