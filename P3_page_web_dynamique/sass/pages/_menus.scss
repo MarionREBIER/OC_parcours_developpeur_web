@@ -177,8 +177,6 @@
             display: grid;
             grid-template-columns: auto auto auto; 
             h3 {
-                grid-column: 2/3;
-                margin-bottom: 0;
                 @include small-only {
                     margin-bottom: 14px;
                 }
@@ -220,6 +218,16 @@
 }
 
 // One page menus 1 & 2 : font-size and special layout for desserts without prices
+.menu-1 {
+    #signature {
+        display: grid;
+        @include small-only {
+            grid-template-columns: auto auto;
+            margin-top: 40px;
+        }
+    }
+}
+
 .menu-1, .menu-2 {
     h2 {
         @include small-only {
@@ -229,7 +237,7 @@
     h4 {
         @include small-only {
             font-size: 1.6em;
-            margin-bottom: 0;
+            margin: auto auto auto 0;
         }
     }
     .part__3 {

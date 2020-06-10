@@ -1,0 +1,58 @@
+// This file contains all styles related to the SVG ornaments
+
+// Music note
+.note-haut, .note-bas {
+    @include xx-small-only {
+        display: none;
+    }
+    @include small-only {
+        display: block;
+    }
+}
+
+.note-prev, .note-bas {
+    width: 40px;
+}
+
+.note-prev {
+    margin: auto;
+}
+
+.note-bas {
+    margin: auto 10px auto auto;
+}
+
+.note-haut  {
+    width: 60px;
+    margin: auto;
+}
+
+
+// All others ornements
+.ornement-gauche, .ornement-droite {
+    @include xx-small-only {
+        display: none;
+    }
+    @include small-only {
+        display: block;
+        margin: auto;
+    }
+}
+
+// First menu's ornements
+.menu {
+    .ornement-gauche {
+        @include small-only {
+            width: 90%;
+            margin-left: 0;
+        }
+    }
+    .ornement-droite {
+        @include small-only {
+            width: 90%;
+            margin-right: 0;
+        }
+    }
+}
+
+

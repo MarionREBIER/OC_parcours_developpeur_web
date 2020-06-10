@@ -31,6 +31,59 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .note-haut, .note-bas {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .note-haut, .note-bas {
+    display: block;
+  }
+}
+
+.note-prev, .note-bas {
+  width: 40px;
+}
+
+.note-prev {
+  margin: auto;
+}
+
+.note-bas {
+  margin: auto 10px auto auto;
+}
+
+.note-haut {
+  width: 60px;
+  margin: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .ornement-gauche, .ornement-droite {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ornement-gauche, .ornement-droite {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu .ornement-gauche {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .ornement-droite {
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
 header, footer {
   background-color: #579C87;
 }
@@ -260,10 +313,6 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.menu .part__1 .part__123__title h3, .menu .part__2 .part__123__title h3, .menu .part__3 .part__123__title h3 {
-  grid-column: 2/3;
-  margin-bottom: 0;
-}
 @media screen and (min-width: 768px) {
   .menu .part__1 .part__123__title h3, .menu .part__2 .part__123__title h3, .menu .part__3 .part__123__title h3 {
     margin-bottom: 14px;
@@ -302,6 +351,16 @@ footer {
   }
 }
 
+.menu-1 #signature {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .menu-1 #signature {
+    grid-template-columns: auto auto;
+    margin-top: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-1 h2, .menu-2 h2 {
     font-size: 1.8em;
@@ -310,7 +369,7 @@ footer {
 @media screen and (min-width: 768px) {
   .menu-1 h4, .menu-2 h4 {
     font-size: 1.6em;
-    margin-bottom: 0;
+    margin: auto auto auto 0;
   }
 }
 @media screen and (min-width: 768px) {
