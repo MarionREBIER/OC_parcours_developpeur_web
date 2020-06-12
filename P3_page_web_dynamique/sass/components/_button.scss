@@ -1,23 +1,53 @@
-// This file contains all styles related to the BUTTON component
+// This file contains all styles related to the BUTTON components
 
-.button {
+// Buttons' menus (home page) : all
+.btn-menus {
+    cursor: pointer;  
+    border: none;
+    outline: none;
+    @extend .box-shadow;
+    display : grid;
+    align-content: center;
+    h3 {
+        font-size: 1.8em;
+        margin-top: 0;
+    }
+}
+
+// Button's Menu 2 "Le chic à la française"
+.btn-menu--2 {
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+// Button's Menu 3 & Menu 4
+.btn-menu--3, .btn-menu--4 {
+    h2 {
+        font-size: 1.7em;
+    }
+    h3 {
+        font-weight: normal;
+    }
+}
+    
+// Button "Prochainement"
+.btn-prochainement {
     margin-bottom: 30px; 
     @extend .text-align-center;
-    .button__heading {
+    .btn-prochainement__heading {
         padding: 8px 30px 8px 30px;
         font-size: 1.2em;
-        background-color: $color-primary;
-        color: $text-color-primary;
         border-radius: 0.5em;
         border: none;
     }   
-    button:focus {
-        outline: 0;
+    .btn-prochainement:focus {
+        outline: none;
     }
-    @include xx-small-only {
+    @include xx-small-only { // The button do not appear for xx-small and x-small menus
         display: none;
     }
-    @include small-only {
+    @include small-only { // The button appears in small menus and beyond
         display: block;
     }
 }

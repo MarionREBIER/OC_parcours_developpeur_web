@@ -1,0 +1,15 @@
+// This file contains all styles related to the HEADER of the site
+
+header {
+    display: grid;
+    height: 70px;
+    @extend .text-align-center;
+    background-color: $color-primary;
+    h1 {
+        margin: auto;
+        font-size: 2em;
+    }
+    a:link, a:visited {
+        color: $text-color-primary;
+    }
+}

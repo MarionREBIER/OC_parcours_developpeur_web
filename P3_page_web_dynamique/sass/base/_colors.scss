@@ -1,0 +1,112 @@
+// This file contains styles that are specific to the COLORS
+
+// Button "Prochainement"
+.btn-prochainement__heading {
+    background-color: $color-primary;
+    color: $text-color-primary;
+}
+
+// Menu 1 "La note enchantée" (button & one page menu)
+.btn-menu--1, .menu-1 {
+    background-color: $color-menu1;
+    h2, h3, h4, p {
+        color: $color-title-text-menu1;
+    }
+    .price {
+        p {
+            @include xx-small-only {
+                background-color: $color-price-menu1; 
+            }
+            @include small-only {
+                background-color: $color-menu1;
+                // font-weight: bold;
+            }
+        }
+    }
+}
+
+// Menu 2 "Le chic à la française" (button & one page menu)
+.btn-menu--2, .menu-2 {
+    background-color: $color-menu2;
+    h2 {
+        background: linear-gradient(160deg, $color-title-menu2-part1 40%, $color-menu2-part3 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3 {
+        color: $color-title-menu2-part1;
+    }
+    .part__1 {
+        color: $color-title-menu2-part1;
+        h3 {
+            color: $color-title-menu2-part1;
+        }
+    }
+    .part__2 {
+        color: $color-menu2-part2;
+        h3 {
+            color: $color-menu2-part2;
+        }
+    }
+    .part__3, h3 {
+        color: $color-menu2-part3;
+    }
+    .price {
+        p {
+            @include xx-small-only {
+                background-color: $color-price-menu2; ; 
+            }
+            @include small-only {
+                background-color: $color-menu2;
+            }
+        }
+    }
+}
+
+// Menu 3 "Le délice des papilles" (button & one page menu)
+.btn-menu--3, .menu-3 {
+    color: $color-title-menu3;
+    background-color: $color-menu3;
+    h2 {
+        background: linear-gradient(160deg, #001ed9 40%, #0889fb 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p, h3 {
+        color: black;
+    }
+    .price {
+        p {
+            @include xx-small-only {
+                background-color: $color-price-menu3; 
+            }
+            @include small-only {
+                background-color: $color-menu3;
+            }
+        }
+    }
+}
+
+// Menu 4 "La palette du goût"
+.btn-menu--4, .menu-4 {
+    color: $color-title-menu4;
+    background-color: $color-menu4;
+    h2 {
+        background: linear-gradient(160deg, #3e923a 40%, #beff7f 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p, h3 {
+        color: black;
+    }
+    .price {
+        p {
+            @include xx-small-only {
+                background-color: $color-price-menu4; 
+            }
+            @include small-only {
+                background-color: $color-menu4;
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@ body {
     @include medium-only {
         width: 50%;
         margin: auto;
-        border-left: 0.5px solid lightgrey;
+        border-left: 0.5px solid lightgrey; 
         border-right: 0.5px solid lightgrey;
     }
     @include x-large-only {

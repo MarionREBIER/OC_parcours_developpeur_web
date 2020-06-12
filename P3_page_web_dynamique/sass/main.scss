@@ -9,13 +9,17 @@
 @import "./components/media";
 
 // LAYOUTS
-@import "./layouts/header_footer";
+@import "./layouts/footer";
+@import "./layouts/grid";
+@import "./layouts/header";
 
 // PAGES 
 @import "./pages/mentions";
 @import "./pages/menus";
 
 // BASE 
-@import "./base/typography";
-@import "./base/base";
 @import "./base/animations";
+@import "./base/base";
+@import "./base/colors";
+@import "./base/typography";
+

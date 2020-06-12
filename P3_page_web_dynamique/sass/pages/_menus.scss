@@ -1,150 +1,9 @@
-// This file contains styles that are specific to the MENUS (Home page and one pages)
+// This file contains styles that are specific to the one pages MENUS general layout
 
-// Menus preview : home page
-.menu-prev {
-    cursor: pointer;
-    display : grid;
-    align-content: center;
-    h3 {
-        font-size: 1.8em;
-        margin-top: 0;
-    }
-}
-
-.menu-prev--2 {
-    h2 {
-        font-size: 1.2em;
-    }
-}
-
-.menu-prev--3, .menu-prev--4 {
-    h2 {
-        font-size: 1.7em;
-    }
-    h3 {
-        font-weight: normal;
-    }
-}
-
-.grid-menus {
-    display: grid;
-    @include xx-small-only {
-        grid-template-columns: auto; 
-        grid-template-rows: 380px 380px 380px 380px;
-        row-gap: 35px;
-        margin: 40px 25px 30px 25px;
-    }
-    @include x-small-only {
-        grid-template-rows: 406px 406px 406px 406px;
-        margin: 60px 37px 50px 37px;
-        row-gap: 47px;
-    }
-    @include small-only {
-        // grid-template-columns: 276px 276px;
-        grid-template-columns: auto auto;
-        grid-template-rows: 430px 430px;
-        column-gap: 54px;
-        row-gap: 54px;
-        margin: 54px 84px 44px 84px;
-    }
-    @include medium-only {
-        grid-template-columns: auto auto;
-        grid-template-rows: 287px 287px;
-        column-gap: 36px;
-        row-gap: 36px;
-        margin: 36px 56px 26px 56px;
-    }
-    @include large-only {
-        grid-template-columns: auto auto;
-        grid-template-rows: 336px 336px;
-        column-gap: 42px;
-        row-gap: 42px;
-        margin: 42px 66px 32px 66px;
-    }
-    @include x-large-only {
-        grid-template-columns: 258px 258px;
-        grid-template-rows: 403px 403px;
-        column-gap: 51px;
-        row-gap: 51px;
-        margin: 51px 79px 41px 79px;
-    }
-}
-
-// Menus preview and one page menus : all
-.menu-prev, .menu {
-    @extend .box-shadow;
-    h2, h3, h4 {
-        @extend .text-align-center;
-    }
-}
-
-// Menu preview and one page menu : Menu 1 "La note enchantée"
-.menu-prev--1, .menu-1 {
-    background-color: $color-menu1;
-    h2, h3, h4, p {
-        color: $color-title-text-menu1;
-    }
-
-}
-
-// Menu preview and one page menu : Menu 2 "Le chic à la française"
-.menu-prev--2, .menu-2 {
-    background-color: $color-menu2;
-    h2 {
-        background: linear-gradient(160deg, $color-title-menu2-part1 40%, $color-menu2-part3 60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    h3 {
-        color: $color-title-menu2-part1;
-    }
-}
-
-.menu-2 {
-    .part__1 {
-        color: $color-title-menu2-part1;
-        h3 {
-            color: $color-title-menu2-part1;
-        }
-    }
-    .part__2 {
-        color: $color-menu2-part2;
-        h3 {
-            color: $color-menu2-part2;
-        }
-    }
-    .part__3, h3 {
-        color: $color-menu2-part3;
-    }
-}
-
-// Menu preview and one page menu : Menu 3 "Le délice des papilles"
-.menu-prev--3, .menu-3 {
-    color: $color-title-menu3;
-    background-color: $color-menu3;
-    h2 {
-        background: linear-gradient(160deg, #001ed9 40%, #0889fb 60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-// Menu preview and one page menu : Menu 4 "La palette du goût"
-.menu-prev--4, .menu-4 {
-    color: $color-title-menu4;
-    background-color: $color-menu4;
-    h2 {
-        background: linear-gradient(160deg, #3e923a 40%, #beff7f 60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-// One page menus : layouts
+// Menu title between header and menu
 .menu__title {
     @extend .text-align-center;
-    margin-top: 40px;
-    @include xx-small-only {
+    @include xx-small-only { 
         h2 {
             display: none;
         }
@@ -152,191 +11,133 @@
     @include small-only {
         h2 {
             display: block;
-            // font-size: 2em;
-        }
-    }
-}
-
-.menu {
-    @include xx-small-only {
-        text-align: center;
-        margin: 25px 25px 40px 25px;
-        padding: 20px 20px 40px 20px;
-    }
-    @include x-small-only {
-        margin: 45px 30px 45px 30px;
-    }
-    @include small-only {
-        margin: 25px 60px 55px 60px;
-        padding: 60px 60px 60px 60px;
-    }
-    .part__1, .part__2, .part__3 {
-        margin-top: 30px;
-        display: grid;
-        .part__123__title {
-            display: grid;
-            grid-template-columns: auto auto auto; 
-            h3 {
-                @include small-only {
-                    margin-bottom: 14px;
-                }
-            }
-        }
-        .part__123__food {
-            @include small-only {
-                display: grid;
-                grid-template-columns: auto auto;
-            }
-            .dish {
-                p {
-                    @include xx-small-only {
-                        margin: 25px 0 8px 0;
-                    }
-                    @include small-only {
-                        margin: 10px auto 10px 0;
-                        text-align: left;
-                    }
-                }
-            }
-            .price {
-                p {
-                    @include xx-small-only {
-                        margin: auto;
-                        padding: 10px 0 10px 0;
-                        border-radius: 50%;
-                        width: 45px;
-                        height: 25px;
-                    }
-                    @include small-only {
-                        padding: 0;
-                        margin: 10px 0 10px auto;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// One page menus 1 & 2 : font-size and special layout for desserts without prices
-.menu-1 {
-    #signature {
-        display: grid;
-        @include small-only {
-            grid-template-columns: auto auto;
             margin-top: 40px;
         }
     }
 }
 
-.menu-1, .menu-2 {
+// One page menu general layout : text-align, margin & padding
+.menu {
+    @extend .box-shadow;
+    @include xx-small-only {
+        margin: 40px 25px 40px 25px;
+        padding: 10px 20px 40px 20px;
+    }
+    @include x-small-only {
+        padding: 10px 30px 40px 30px;
+    }
+    @include small-only {
+        margin: 20px 55px 50px 50px;
+        padding: 20px 20px 60px 20px;
+    }
     h2 {
+        @extend .text-align-center;
+        @include xx-small-only {
+        margin: 30px auto 30px auto;
+        }
         @include small-only {
-            font-size: 1.8em;
+            margin: 60px auto 60px auto;
         }
     }
-    h4 {
+    h3 {
+        @extend .text-align-center;
+        @include xx-small-only {
+            margin: 0 auto 0;
+        }
         @include small-only {
-            font-size: 1.6em;
-            margin: auto auto auto 0;
+            margin: auto; // To be at the same height than ornaments
         }
     }
-    .part__3 {
+    .part__1, .part__2, .part__3 {
+        @include xx-small-only {
+            margin-bottom: 20px;
+        }
+        @include small-only {
+            margin-bottom: 40px;
+        }
         .dish {
+            @include xx-small-only {
+                text-align: center;
+            }
+            @include small-only {
+                text-align: left;
+            }
             p {
+                margin-bottom: 8px;
+            }
+        }
+        .price {
+            @include xx-small-only {
+                margin-bottom: 30px;
+            }
+            @include small-only {
+                margin-bottom: 0;
+                vertical-align: middle;
+                margin: auto 0 auto auto;
+            }
+            p {
+                @include xx-small-only {
+                    text-align: center;
+                    margin: auto;
+                    padding: 10px 0 10px 0;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 25px;
+                }
                 @include small-only {
-                    text-align: left;
-                    margin: 10px auto 10px 0;
+                //    vertical-align: middle;
+                    padding: 0;
+                //     margin: auto 0 auto auto;
                 }
             }
         }
     }
 }
 
-// One page menus 2 & 3 : title menu font-size
-.menu-3, .menu-4 {
-    h2 {
-        @include small-only {
-            font-size: 3em;
-            margin: 50px 0 50px 0;
-        }
-    }
-}
-
-// One page menus : font-weight
-.menu-1, .menu-2, .menu-3, .menu-4 {
-    h3, .price {
-        @include xx-small-only {
-            font-weight: bold;
-        }
-    }
-}
-
-.menu-2, .menu-3, .menu-4 {
-    h3, .price {
-        @include small-only {
-            font-weight: normal;
-        }
-    }
-}
-
-// One page menus : Background-color for prices (xx-small and small)
+// Menu 1 La note enchantée
 .menu-1 {
+    h2 {
+        margin-top: 0;
+    }
     .price {
         p {
             @include xx-small-only {
-                background-color: $color-price-menu1; 
-            }
-            @include small-only {
-                background-color: $color-menu1;
                 font-weight: bold;
             }
         }
     }
 }
 
+#signature {
+    margin-top: 40px;
+    h4 {
+        margin: auto auto auto 0;
+    }
+}
+
+// Menu 2 Le chic à la française
 .menu-2 {
+    h3 {
+        @include xx-small-only {
+            font-weight: bold;
+        }
+        @include small-only {
+            font-weight: normal;
+        }
+    }
     .price {
         p {
             @include xx-small-only {
-                background-color: $color-price-menu2; ; 
+                font-weight: bold;
             }
             @include small-only {
-                background-color: $color-menu2;
+                font-weight: normal;
             }
         }
     }
 }
 
-.menu-3 {
-    p, h3 {
-        color: black;
-    }
-    .price {
-        p {
-            @include xx-small-only {
-                background-color: $color-price-menu3; 
-            }
-            @include small-only {
-                background-color: $color-menu3;
-            }
-        }
-    }
-}
-
-.menu-4 {
-    p, h3 {
-        color: black;
-    }
-    .price {
-        p {
-            @include xx-small-only {
-                background-color: $color-price-menu4; 
-            }
-            @include small-only {
-                background-color: $color-menu4;
-            }
-        }
-    }
-}
+// Menu 3 Le délice des papilles
 
 
+// Menu 4 La palette du goût

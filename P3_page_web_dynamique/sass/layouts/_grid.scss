@@ -1,0 +1,73 @@
+// This file contains all styles related to the GRID SYSTEM used in the site
+
+// Home page's grid system
+.grid-menus {
+    display: grid;
+    @include xx-small-only {
+        grid-template-columns: auto; 
+        grid-template-rows: 380px 380px 380px 380px;
+        row-gap: 35px;
+        margin: 40px 25px 30px 25px;
+    }
+    @include x-small-only {
+        grid-template-rows: 406px 406px 406px 406px;
+        margin: 60px 37px 50px 37px;
+        row-gap: 47px;
+    }
+    @include small-only {
+        // grid-template-columns: 276px 276px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 430px 430px;
+        column-gap: 54px;
+        row-gap: 54px;
+        margin: 54px 84px 44px 84px;
+    }
+    @include medium-only {
+        grid-template-columns: auto auto;
+        grid-template-rows: 287px 287px;
+        column-gap: 36px;
+        row-gap: 36px;
+        margin: 36px 56px 26px 56px;
+    }
+    @include large-only {
+        grid-template-columns: auto auto;
+        grid-template-rows: 336px 336px;
+        column-gap: 42px;
+        row-gap: 42px;
+        margin: 42px 66px 32px 66px;
+    }
+    @include x-large-only {
+        grid-template-columns: 258px 258px;
+        grid-template-rows: 403px 403px;
+        column-gap: 51px;
+        row-gap: 51px;
+        margin: 51px 79px 41px 79px;
+    }
+}
+
+// One page menus' grid system
+.menu {
+    .part__1, .part__2, .part__3 {
+        display: grid;
+        .part__123__title {
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            h3 {
+                grid-column: 2/3;
+            }
+        }
+        .part__123__food {
+            @include small-only {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+}
+
+// Menu 1 "La note enchantée"
+#signature {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
