@@ -2,7 +2,7 @@
   box-shadow: 0px 0px 10px lightgrey;
 }
 
-.text-align-center, .menu h3, .menu h2, .menu__title, .article-mentions h2, header, footer, .btn-prochainement {
+.text-align-center, .menu h3, .menu h2, .menu__title, .article-mentions h2, header, .btn-prochainement {
   text-align: center;
 }
 
@@ -18,12 +18,20 @@
   margin-top: 0;
 }
 
+.btn-menu--1 h2 {
+  font-size: 2em;
+  margin-top: 8px;
+}
+
 .btn-menu--2 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+.btn-menu--2 h3 {
+  letter-spacing: 0.1em;
 }
 
 .btn-menu--3 h2, .btn-menu--4 h2 {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 .btn-menu--3 h3, .btn-menu--4 h3 {
   font-weight: normal;
@@ -58,11 +66,17 @@
 }
 
 .note-menu-haut {
-  margin: auto;
+  display: block;
+  margin: 10px auto 0 auto;
 }
 @media screen and (min-width: 320px) {
   .note-menu-haut {
     width: 40px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .note-menu-haut {
+    width: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -115,22 +129,6 @@ footer {
   bottom: 0;
   width: 100%;
   height: 40px;
-  display: grid;
-  grid-auto-flow: column;
-  background-color: #579C87;
-}
-@media screen and (min-width: 320px) {
-  footer a {
-    margin: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  footer a {
-    align-content: flex-start;
-  }
-}
-footer a:link, footer a:visited {
-  color: #FDCB46;
 }
 @media screen and (min-width: 1024px) {
   footer {
@@ -220,6 +218,36 @@ footer a:link, footer a:visited {
   grid-template-columns: auto auto;
 }
 
+footer {
+  display: grid;
+  grid-auto-flow: column;
+}
+@media screen and (min-width: 320px) {
+  footer :nth-child(1), footer :nth-child(2) {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer :nth-child(1) {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer :nth-child(1) {
+    margin-left: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer :nth-child(2) {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer :nth-child(2) {
+    margin-right: 14px;
+  }
+}
+
 header {
   display: grid;
   height: 70px;
@@ -233,9 +261,6 @@ header a:link, header a:visited {
   color: #FDCB46;
 }
 
-.article-mentions {
-  margin: 25px 25px 25px 25px;
-}
 .article-mentions h2 {
   margin-bottom: 25px;
 }
@@ -244,6 +269,16 @@ header a:link, header a:visited {
 }
 .article-mentions a:link, .article-mentions a:visited {
   color: #212121;
+}
+@media screen and (min-width: 320px) {
+  .article-mentions {
+    margin: 40px 25px 40px 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .article-mentions {
+    margin: 25px 25px 25px 25px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -277,7 +312,7 @@ header a:link, header a:visited {
 }
 @media screen and (min-width: 320px) {
   .menu h2 {
-    margin: 30px auto 30px auto;
+    margin: 40px auto 50px auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -287,7 +322,7 @@ header a:link, header a:visited {
 }
 @media screen and (min-width: 320px) {
   .menu h3 {
-    margin: 0 auto 0;
+    margin: 0 auto 10px auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -305,53 +340,76 @@ header a:link, header a:visited {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 320px) {
-  .menu .part__1 .dish, .menu .part__2 .dish, .menu .part__3 .dish {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu .part__1 .dish, .menu .part__2 .dish, .menu .part__3 .dish {
-    text-align: left;
-  }
-}
 .menu .part__1 .dish p, .menu .part__2 .dish p, .menu .part__3 .dish p {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 320px) {
-  .menu .part__1 .price, .menu .part__2 .price, .menu .part__3 .price {
-    margin-bottom: 30px;
+  .menu .part__1 .dish p, .menu .part__2 .dish p, .menu .part__3 .dish p {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu .part__1 .price, .menu .part__2 .price, .menu .part__3 .price {
-    margin-bottom: 0;
-    vertical-align: middle;
-    margin: auto 0 auto auto;
+  .menu .part__1 .dish p, .menu .part__2 .dish p, .menu .part__3 .dish p {
+    text-align: left;
   }
 }
 @media screen and (min-width: 320px) {
   .menu .part__1 .price p, .menu .part__2 .price p, .menu .part__3 .price p {
-    text-align: center;
-    margin: auto;
-    padding: 10px 0 10px 0;
-    border-radius: 50%;
     width: 45px;
     height: 25px;
+    text-align: center;
+    margin: auto auto 30px auto;
+    padding: 11px 0 9px 0;
+    border-radius: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   .menu .part__1 .price p, .menu .part__2 .price p, .menu .part__3 .price p {
+    text-align: right;
+    width: auto;
+    height: auto;
     padding: 0;
+    margin: 0;
   }
 }
 
+@media screen and (min-width: 320px) {
+  .menu-1 {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 {
+    padding: 40px 50px 60px 50px;
+  }
+}
 .menu-1 h2 {
-  margin-top: 0;
+  margin: 2px auto 50px auto;
+}
+@media screen and (min-width: 480px) {
+  .menu-1 h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 .part__123__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 .dish p {
+    padding-left: 10px;
+  }
 }
 @media screen and (min-width: 320px) {
-  .menu-1 .price p {
+  .menu-1 .price {
     font-weight: bold;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-1 .price {
+    padding-right: 10px;
+    margin: auto 0 8px auto;
   }
 }
 
@@ -361,25 +419,73 @@ header a:link, header a:visited {
 #signature h4 {
   margin: auto auto auto 0;
 }
+@media screen and (min-width: 320px) {
+  #signature h4 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 480px) {
+  #signature h4 {
+    font-size: 1.5em;
+  }
+}
 
 @media screen and (min-width: 320px) {
-  .menu-2 h3 {
+  .menu-2 .price p, .menu-4 .price p {
     font-weight: bold;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-2 h3 {
+  .menu-2 .price p, .menu-4 .price p {
     font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-2 .part__123__title, .menu-3 .part__123__title, .menu-4 .part__123__title {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 320px) {
-  .menu-2 .price p {
+  .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
     font-weight: bold;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-2 .price p {
+  .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
     font-weight: normal;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-2 .dish p, .menu-3 .dish p, .menu-4 .dish p {
+    padding-left: 60px;
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-2 .price, .menu-3 .price, .menu-4 .price {
+    padding-right: 60px;
+    font-size: 0.9em;
+    margin: auto 0 8px auto;
+  }
+}
+@media screen and (min-width: 320px) {
+  .menu-2 .price, .menu-3 .price, .menu-4 .price {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-3 h2, .menu-4 h2 {
+    font-size: 3.6em;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-2 h3 {
+    font-weight: bold;
   }
 }
 
@@ -568,6 +674,10 @@ a {
   }
 }
 
+.btn-menu--2 h3 {
+  color: #C67412;
+}
+
 .btn-menu--3, .menu-3 {
   color: #0887FB;
   background-color: #EDEFEF;
@@ -591,6 +701,10 @@ a {
   }
 }
 
+.btn-menu--3 h3 {
+  color: #0887FB;
+}
+
 .btn-menu--4, .menu-4 {
   color: #72BF56;
   background-color: #FDFFFD;
@@ -612,6 +726,17 @@ a {
   .btn-menu--4 .price p, .menu-4 .price p {
     background-color: #FDFFFD;
   }
+}
+
+.btn-menu--4 h3 {
+  color: #72BF56;
+}
+
+footer {
+  background-color: #579C87;
+}
+footer a:link, footer a:visited {
+  color: #FDCB46;
 }
 
 header, footer, button, .article-mentions, .menu__title {

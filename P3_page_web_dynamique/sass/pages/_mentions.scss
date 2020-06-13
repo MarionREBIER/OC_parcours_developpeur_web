@@ -1,7 +1,6 @@
 // This file contains styles that are specific to the MENTIONS page
 
 .article-mentions {
-    margin: 25px 25px 25px 25px;
     h2 {
         @extend .text-align-center;
         margin-bottom: 25px;
@@ -11,5 +10,11 @@
     }
     a:link, a:visited {
         color: $text-color-mentions;
+    }
+    @include xx-small-only {
+        margin: 40px 25px 40px 25px;
+    }
+    @include small-only {
+        margin: 25px 25px 25px 25px;
     }
 }

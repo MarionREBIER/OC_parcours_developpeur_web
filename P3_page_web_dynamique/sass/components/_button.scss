@@ -14,17 +14,28 @@
     }
 }
 
+// Button's Menu 1 "La note enchantée"
+.btn-menu--1 {
+    h2 {
+        font-size: 2em;
+        margin-top: 8px;
+    }
+}
+
 // Button's Menu 2 "Le chic à la française"
 .btn-menu--2 {
     h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
+    }
+    h3 {
+        letter-spacing: 0.1em;
     }
 }
 
 // Button's Menu 3 & Menu 4
 .btn-menu--3, .btn-menu--4 {
     h2 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
     h3 {
         font-weight: normal;

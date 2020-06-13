@@ -71,3 +71,30 @@
     grid-template-columns: auto auto;
 }
 
+// Footer grid system
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    :nth-child(1), :nth-child(2) {
+        @include xx-small-only {
+            margin: auto;
+        }
+    }
+    :nth-child(1) {
+        @include small-only {
+            margin-left: 40px;
+        }
+        @include medium-only {
+            margin-left: 14px;
+        }
+    }
+    :nth-child(2) {
+        @include small-only {
+            margin-right: 40px;
+        }
+        @include medium-only {
+            margin-right: 14px;
+        }
+    }
+}
+

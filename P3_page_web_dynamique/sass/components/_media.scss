@@ -7,9 +7,13 @@
 }
 
 .note-menu-haut {
-    margin: auto; // Vérifier si fonctionne bien
+    display: block;
+    margin: 10px auto 0 auto;
     @include xx-small-only {
         width: 40px;
+    }
+    @include x-small-only {
+        width: 50px;
     }
     @include small-only {
         width: 60px;

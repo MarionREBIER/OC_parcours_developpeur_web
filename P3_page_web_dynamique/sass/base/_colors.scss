@@ -63,6 +63,12 @@
     }
 }
 
+.btn-menu--2 {
+    h3 {
+        color: $color-title-menu2-part1;
+    }
+}
+
 // Menu 3 "Le délice des papilles" (button & one page menu)
 .btn-menu--3, .menu-3 {
     color: $color-title-menu3;
@@ -87,6 +93,12 @@
     }
 }
 
+.btn-menu--3 {
+    h3 {
+        color: $color-title-menu3;
+    }
+}
+
 // Menu 4 "La palette du goût"
 .btn-menu--4, .menu-4 {
     color: $color-title-menu4;
@@ -108,5 +120,19 @@
                 background-color: $color-menu4;
             }
         }
+    }
+}
+
+.btn-menu--4 {
+    h3 {
+        color: $color-title-menu4;
+    }
+}
+
+// Footer
+footer {
+    background-color: $color-primary;
+    a:link, a:visited {
+        color: $text-color-primary;
     }
 }

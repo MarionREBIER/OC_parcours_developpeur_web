@@ -33,7 +33,7 @@
     h2 {
         @extend .text-align-center;
         @include xx-small-only {
-        margin: 30px auto 30px auto;
+        margin: 40px auto 50px auto;
         }
         @include small-only {
             margin: 60px auto 60px auto;
@@ -42,7 +42,7 @@
     h3 {
         @extend .text-align-center;
         @include xx-small-only {
-            margin: 0 auto 0;
+            margin: 0 auto 10px auto;
         }
         @include small-only {
             margin: auto; // To be at the same height than ornaments
@@ -56,38 +56,32 @@
             margin-bottom: 40px;
         }
         .dish {
-            @include xx-small-only {
-                text-align: center;
-            }
-            @include small-only {
-                text-align: left;
-            }
             p {
                 margin-bottom: 8px;
+                @include xx-small-only {
+                    text-align: center;
+                }
+                @include small-only {
+                    text-align: left;
+                }
             }
         }
         .price {
-            @include xx-small-only {
-                margin-bottom: 30px;
-            }
-            @include small-only {
-                margin-bottom: 0;
-                vertical-align: middle;
-                margin: auto 0 auto auto;
-            }
             p {
                 @include xx-small-only {
-                    text-align: center;
-                    margin: auto;
-                    padding: 10px 0 10px 0;
-                    border-radius: 50%;
                     width: 45px;
                     height: 25px;
+                    text-align: center;
+                    margin: auto auto 30px auto;
+                    padding: 11px 0 9px 0;
+                    border-radius: 50%;
                 }
                 @include small-only {
-                //    vertical-align: middle;
+                    text-align: right;
+                    width: auto;
+                    height: auto;
                     padding: 0;
-                //     margin: auto 0 auto auto;
+                    margin: 0;
                 }
             }
         }
@@ -96,14 +90,37 @@
 
 // Menu 1 La note enchantée
 .menu-1 {
+    @include xx-small-only {
+        padding-top: 30px;
+    }
+    @include small-only {
+        padding: 40px 50px 60px 50px;
+    }
     h2 {
-        margin-top: 0;
+        margin: 2px auto 50px auto;
+        @include x-small-only {
+            font-size: 2em;
+        }
+    }
+    .part__123__title {
+        @include small-only {
+            margin-bottom: 10px;
+        }
+    }
+    .dish {
+        p {
+            @include small-only {
+                padding-left: 10px;
+            }
+        }
     }
     .price {
-        p {
-            @include xx-small-only {
-                font-weight: bold;
-            }
+        @include xx-small-only {
+            font-weight: bold;
+        }
+        @include small-only {
+            padding-right: 10px;
+            margin: auto 0 8px auto;
         }
     }
 }
@@ -112,19 +129,17 @@
     margin-top: 40px;
     h4 {
         margin: auto auto auto 0;
+        @include xx-small-only {
+            font-size: 1.3em;
+        }
+        @include x-small-only {
+            font-size: 1.5em;
+        }
     }
 }
 
-// Menu 2 Le chic à la française
-.menu-2 {
-    h3 {
-        @include xx-small-only {
-            font-weight: bold;
-        }
-        @include small-only {
-            font-weight: normal;
-        }
-    }
+// Menus 2 & 4 : font-weight bold or not, for prices and titles
+.menu-2, .menu-4 {
     .price {
         p {
             @include xx-small-only {
@@ -137,7 +152,57 @@
     }
 }
 
-// Menu 3 Le délice des papilles
+// Menu 2, 3 & 4 : h3 title font-weight, paddin & margin
+.menu-2, .menu-3, .menu-4 {
+    .part__123__title {
+        @include small-only {
+            margin-bottom: 20px;
+        }
+    }
+    h3, .price {
+        @include xx-small-only {
+            font-weight: bold;
+        }
+        @include small-only {
+            font-weight: normal;
+            font-size: 1em;
+        }
+    }
+    .dish {
+        p {
+            @include small-only {
+                padding-left: 60px;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .price {
+        @include small-only {
+            padding-right: 60px;
+            font-size: 0.9em;
+            margin: auto 0 8px auto;
+        }
+        @include xx-small-only {
+            font-weight: bold;
+        }
+    }
+}
 
+// Menus 3 & 4 : h2 title
+.menu-3, .menu-4 {
+    h2 {
+        @include small-only {
+            font-size: 3.6em;
+            font-weight: lighter;
+        }
+    }
+}
 
-// Menu 4 La palette du goût
+// Menu 2 Le chic à la française
+.menu-2 {
+    h3 {
+        @include small-only {
+            font-weight: bold;
+        }
+    }
+}
