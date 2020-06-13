@@ -249,17 +249,17 @@ footer {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 70px;
   display: grid;
+  height: 70px;
 }
 header h1 {
   margin: auto;
   font-size: 2em;
 }
 
+.article-mentions span {
+  font-weight: bold;
+}
 .article-mentions h2 {
   margin: auto auto 50px auto;
 }
@@ -272,11 +272,13 @@ header h1 {
 @media screen and (min-width: 320px) {
   .article-mentions {
     margin: 40px 25px 40px 25px;
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 768px) {
   .article-mentions {
     margin: 50px 35px 50px 35px;
+    font-size: 1em;
   }
 }
 
