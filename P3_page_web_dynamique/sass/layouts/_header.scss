@@ -1,15 +1,14 @@
 // This file contains all styles related to the HEADER of the site
 
 header {
-    display: grid;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 70px;
+    display: grid;
     @extend .text-align-center;
-    background-color: $color-primary;
     h1 {
         margin: auto;
         font-size: 2em;
-    }
-    a:link, a:visited {
-        color: $text-color-primary;
     }
 }

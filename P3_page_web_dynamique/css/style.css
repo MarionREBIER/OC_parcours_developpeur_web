@@ -249,26 +249,25 @@ footer {
 }
 
 header {
-  display: grid;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 70px;
-  background-color: #579C87;
+  display: grid;
 }
 header h1 {
   margin: auto;
   font-size: 2em;
 }
-header a:link, header a:visited {
-  color: #FDCB46;
-}
 
 .article-mentions h2 {
-  margin-bottom: 25px;
+  margin: auto auto 50px auto;
 }
 .article-mentions h3, .article-mentions h4 {
-  margin-top: 20px;
+  margin-top: 35px;
 }
-.article-mentions a:link, .article-mentions a:visited {
-  color: #212121;
+.article-mentions h4 {
+  padding-left: 20px;
 }
 @media screen and (min-width: 320px) {
   .article-mentions {
@@ -277,7 +276,7 @@ header a:link, header a:visited {
 }
 @media screen and (min-width: 768px) {
   .article-mentions {
-    margin: 25px 25px 25px 25px;
+    margin: 50px 35px 50px 35px;
   }
 }
 
@@ -615,8 +614,26 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: #579C87;
+}
+header a:link, header a:visited {
+  color: #FDCB46;
+}
+
+.article-mentions a:link, .article-mentions a:visited {
+  color: #212121;
+}
+
 .btn-prochainement__heading {
   background-color: #579C87;
+  color: #FDCB46;
+}
+
+footer {
+  background-color: #579C87;
+}
+footer a:link, footer a:visited {
   color: #FDCB46;
 }
 
@@ -730,13 +747,6 @@ a {
 
 .btn-menu--4 h3 {
   color: #72BF56;
-}
-
-footer {
-  background-color: #579C87;
-}
-footer a:link, footer a:visited {
-  color: #FDCB46;
 }
 
 header, footer, button, .article-mentions, .menu__title {

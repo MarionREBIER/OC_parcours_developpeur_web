@@ -1,9 +1,32 @@
 // This file contains styles that are specific to the COLORS
 
+// Header
+header {
+    background-color: $color-primary;
+    a:link, a:visited {
+        color: $text-color-primary;
+    }
+}
+
+// Mentions
+.article-mentions {
+    a:link, a:visited {
+        color: $text-color-mentions;
+    }
+}
+
 // Button "Prochainement"
 .btn-prochainement__heading {
     background-color: $color-primary;
     color: $text-color-primary;
+}
+
+// Footer
+footer {
+    background-color: $color-primary;
+    a:link, a:visited {
+        color: $text-color-primary;
+    }
 }
 
 // Menu 1 "La note enchantée" (button & one page menu)
@@ -126,13 +149,5 @@
 .btn-menu--4 {
     h3 {
         color: $color-title-menu4;
-    }
-}
-
-// Footer
-footer {
-    background-color: $color-primary;
-    a:link, a:visited {
-        color: $text-color-primary;
     }
 }
