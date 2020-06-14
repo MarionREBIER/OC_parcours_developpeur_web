@@ -138,20 +138,6 @@
     }
 }
 
-// Menus 2 & 4 : font-weight bold or not, for prices and titles
-.menu-2, .menu-4 {
-    .price {
-        p {
-            @include xx-small-only {
-                font-weight: bold;
-            }
-            @include small-only {
-                font-weight: normal;
-            }
-        }
-    }
-}
-
 // Menu 2, 3 & 4 : h3 title font-weight, paddin & margin
 .menu-2, .menu-3, .menu-4 {
     .part__123__title {
@@ -159,7 +145,7 @@
             margin-bottom: 20px;
         }
     }
-    h3, .price {
+    h3, .price > p {
         @include xx-small-only {
             font-weight: bold;
         }
@@ -191,11 +177,15 @@
 // Menus 3 & 4 : h2 title
 .menu-3, .menu-4 {
     h2 {
+        @include xx-small-only {
+            font-size: 1.8em;
+        }
         @include small-only {
             font-size: 3.6em;
             font-weight: lighter;
         }
     }
+    padding-bottom: 20px;
 }
 
 // Menu 2 Le chic à la française

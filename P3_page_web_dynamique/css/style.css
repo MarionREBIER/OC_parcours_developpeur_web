@@ -9,7 +9,6 @@
 .btn-menus {
   cursor: pointer;
   border: none;
-  outline: none;
   display: grid;
   align-content: center;
 }
@@ -41,13 +40,14 @@
   margin-bottom: 30px;
 }
 .btn-prochainement .btn-prochainement__heading {
+  cursor: pointer;
   padding: 8px 30px 8px 30px;
   font-size: 1.2em;
   border-radius: 0.5em;
   border: none;
 }
-.btn-prochainement .btn-prochainement:focus {
-  outline: none;
+.btn-prochainement .btn-prochainement__heading:focus, .btn-prochainement .btn-prochainement__heading:active {
+  outline-style: none;
 }
 @media screen and (min-width: 320px) {
   .btn-prochainement {
@@ -431,29 +431,18 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .menu-2 .price p, .menu-4 .price p {
-    font-weight: bold;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-2 .price p, .menu-4 .price p {
-    font-weight: normal;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .menu-2 .part__123__title, .menu-3 .part__123__title, .menu-4 .part__123__title {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 320px) {
-  .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
+  .menu-2 h3, .menu-2 .price > p, .menu-3 h3, .menu-3 .price > p, .menu-4 h3, .menu-4 .price > p {
     font-weight: bold;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-2 h3, .menu-2 .price, .menu-3 h3, .menu-3 .price, .menu-4 h3, .menu-4 .price {
+  .menu-2 h3, .menu-2 .price > p, .menu-3 h3, .menu-3 .price > p, .menu-4 h3, .menu-4 .price > p {
     font-weight: normal;
     font-size: 1em;
   }
@@ -477,6 +466,14 @@ header h1 {
   }
 }
 
+.menu-3, .menu-4 {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 320px) {
+  .menu-3 h2, .menu-4 h2 {
+    font-size: 1.8em;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-3 h2, .menu-4 h2 {
     font-size: 3.6em;
@@ -490,13 +487,15 @@ header h1 {
   }
 }
 
-.btn-menus {
-  overflow: hidden;
+.btn-menus--hover {
+  text-align: center;
   position: relative;
-  transition-duration: 0.8s;
+  transform: scale(1);
+  transition: transform 0.8s;
 }
-.btn-menus:hover {
-  transform: scale(1.15);
+.btn-menus--hover:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 .part__123__title {
@@ -537,11 +536,9 @@ header h1 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-
 .loading span:nth-child(2) {
   animation-delay: 0.4s;
 }
-
 .loading span:nth-child(3) {
   animation-delay: 0.8s;
 }
@@ -595,7 +592,6 @@ body {
   height: 100%;
   margin: 0;
   padding-bottom: 40px;
-  font-size: 100%;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -608,12 +604,12 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     width: 720px;
-    margin: auto;
   }
 }
 
 a {
   text-decoration: none;
+  outline: 0;
 }
 
 header {

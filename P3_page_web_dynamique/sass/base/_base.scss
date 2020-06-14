@@ -4,7 +4,6 @@ body {
     height: 100%;
     margin: 0;
     padding-bottom: 40px;
-    font-size: 100%;
     @include medium-only {
         width: 50%;
         margin: auto;
@@ -13,10 +12,11 @@ body {
     }
     @include x-large-only {
         width: 720px;
-        margin: auto;
     }
 }
 
 a {
     text-decoration: none;
+    outline: 0;
+    // outline-style: none;  // Faire le test
 }

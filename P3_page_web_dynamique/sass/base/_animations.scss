@@ -1,12 +1,15 @@
 // This file contains all styles related to the keyframes for ANIMATIONS
 
 // Zoom effect on menus preview (home page)
-.btn-menus {
-    overflow: hidden;
+.btn-menus--hover {
+    text-align: center;
+    // overflow: hidden;
     position: relative;
-    transition-duration: 0.8s;
+    transform: scale(1);
+    transition: transform 0.8s;
     &:hover {
-        transform: scale(1.15);
+        transform: scale(1.10);
+        opacity: 0.7;
     }
 }
 
@@ -15,8 +18,7 @@
     justify-content: space-between; // pour limiter le soulignement au texte (pas de dépassement)
     h3 {
         position: relative; // place le trait sous le titre
-        &:before, 
-        &:after {
+        &:before, &:after {
             content: "";
             position: absolute;
             bottom: -2px; // positionne le trait sous le texte
@@ -51,14 +53,12 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-}
-
-.loading span:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.loading span:nth-child(3) {
-    animation-delay: 0.8s;
+    &:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+        animation-delay: 0.8s;
+    }
 }
 
 @keyframes dots {
