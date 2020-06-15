@@ -7,34 +7,33 @@
         grid-template-columns: auto; 
         grid-template-rows: 380px 380px 380px 380px;
         row-gap: 35px;
-        margin: 40px 25px 30px 25px;
+        margin: 40px 25px 40px 25px;
     }
     @include x-small-only {
         grid-template-rows: 406px 406px 406px 406px;
-        margin: 60px 37px 50px 37px;
+        margin: 60px 37px 60px 37px;
         row-gap: 47px;
     }
     @include small-only {
-        // grid-template-columns: 276px 276px;
-        grid-template-columns: auto auto;
-        grid-template-rows: 430px 430px;
+        grid-template-columns: 276px 276px;
+        grid-template-rows: 429px 429px;
         column-gap: 54px;
         row-gap: 54px;
-        margin: 54px 84px 44px 84px;
+        margin: 54px 81px 44px 81px;
     }
     @include medium-only {
-        grid-template-columns: auto auto;
+        grid-template-columns: 180px 180px;
         grid-template-rows: 287px 287px;
         column-gap: 36px;
         row-gap: 36px;
-        margin: 36px 56px 26px 56px;
+        margin: 36px 57px 36px 57px;
     }
     @include large-only {
-        grid-template-columns: auto auto;
+        grid-template-columns: 211px 211px;
         grid-template-rows: 336px 336px;
-        column-gap: 42px;
-        row-gap: 42px;
-        margin: 42px 66px 32px 66px;
+        column-gap: 43px;
+        row-gap: 43px;
+        margin: 42px 67px 42px 67px;
     }
     @include x-large-only {
         grid-template-columns: 258px 258px;

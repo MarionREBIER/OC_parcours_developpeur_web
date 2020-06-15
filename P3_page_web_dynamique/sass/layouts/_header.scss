@@ -1,6 +1,7 @@
 // This file contains all styles related to the HEADER of the site
 
 header {
+    width: 100%;
     display: grid;
     height: 70px;
     @extend .text-align-center;
