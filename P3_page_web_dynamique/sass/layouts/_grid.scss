@@ -20,6 +20,11 @@
         column-gap: 54px;
         row-gap: 54px;
         margin: 54px 81px 44px 81px;
+        // grid-template-columns: 36% 36%;
+        // grid-template-rows: 429px 429px;
+        // column-gap: 7%;
+        // row-gap: 7%;
+        // margin: 7% 11% 7% 11%;
     }
     @include medium-only {
         grid-template-columns: 180px 180px;

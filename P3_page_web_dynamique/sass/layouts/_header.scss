@@ -9,4 +9,7 @@ header {
         margin: auto;
         font-size: 2em;
     }
+    @include x-large-only {
+        width: 720px;
+    }
 }
